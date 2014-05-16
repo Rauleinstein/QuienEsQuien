@@ -1,0 +1,656 @@
+\hypertarget{class_config}{
+\section{Referencia de la Clase Config}
+\label{class_config}\index{Config@{Config}}
+}
+{\tt \#include $<$config.h$>$}
+
+\subsection*{Métodos públicos}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_config_bd0c571c116924871e30444b192b792a}{Config} ()
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+\hyperlink{class_config_543dce59b66475c5108088ee4ce1cdfc}{$\sim$Config} ()
+\begin{CompactList}\small\item\em Destructor. \item\end{CompactList}\item 
+int \hyperlink{class_config_63b35552c2db0e6bfadf386a6df6cc8b}{Filas} ()
+\begin{CompactList}\small\item\em Devuelve el valor de nft. \item\end{CompactList}\item 
+int \hyperlink{class_config_7f64981766eaccc7726295beb6e06d1a}{Columnas} ()
+\begin{CompactList}\small\item\em Devuelve el valor de nct. \item\end{CompactList}\item 
+void \hyperlink{class_config_38a07e218d50496b9b93e5bd4ab9956f}{PintaConfig} ()
+\begin{CompactList}\small\item\em Dibuja graficamente toda la configuración. \item\end{CompactList}\item 
+void \hyperlink{class_config_5861894c33eea7cec9523494912a295a}{DibujaCaras} (\hyperlink{class_tablero}{Tablero} \&T)
+\begin{CompactList}\small\item\em Dibuja graficamente todas las caras que estan en el tablero. \item\end{CompactList}\item 
+void \hyperlink{class_config_9f697dc06ed8ea10eb674ffa747bbdab}{DibujaCarasOcultas} (char $\ast$img)
+\begin{CompactList}\small\item\em Dibuja las Caras ocultas del tablero de la maquina. \item\end{CompactList}\item 
+void \hyperlink{class_config_a65b0dec7dbb915a147f0e1a48177cfc}{PintaOcultoJ1} (\hyperlink{class_personaje}{Personaje} P)
+\begin{CompactList}\small\item\em Dibuja el \hyperlink{class_personaje}{Personaje} del Jugador1. \item\end{CompactList}\item 
+void \hyperlink{class_config_bef122e837338a9bcc4c2b0a95866d31}{DescubreOcultoJ2} (\hyperlink{class_personaje}{Personaje} P)
+\begin{CompactList}\small\item\em Descubre el \hyperlink{class_personaje}{Personaje} oculto de la Maquina. \item\end{CompactList}\item 
+void \hyperlink{class_config_1d4493399b5138963924586b02daf6ad}{PintaOcultoJ2} (char $\ast$img)
+\begin{CompactList}\small\item\em Dibuja el \hyperlink{class_personaje}{Personaje} Oculto de la Maquina. \item\end{CompactList}\item 
+void \hyperlink{class_config_69dbcf835071f978ec360958ee54860e}{PintaPreguntas} (\hyperlink{class_preguntas}{Preguntas} \&P)
+\begin{CompactList}\small\item\em Dibuja en el entorno grafico todas las \hyperlink{class_preguntas}{Preguntas}. \item\end{CompactList}\item 
+int \hyperlink{class_config_6098dc6aed67f0e0df613d56cceeddc7}{Recogedatos} (\hyperlink{class_preguntas}{Preguntas} \&P)
+\begin{CompactList}\small\item\em Recoge por teclado todos los datos. \item\end{CompactList}\item 
+void \hyperlink{class_config_fc16e01f77244e2ea4786c814cb4fa99}{PintaTerminal} (char $\ast$cad, \hyperlink{class_cadenas}{Cadenas} \&C)
+\begin{CompactList}\small\item\em Escribe la cadena cad en el terminal. \item\end{CompactList}\item 
+int \hyperlink{class_config_d2717716bb3e5cbca52b4fb906cfc2b0}{EncuentraCoordenadas} (int x, int y, int \&i, int \&j)
+\begin{CompactList}\small\item\em Pasando unas coordenadas de raton devuelve unas coordenadas de matriz. \item\end{CompactList}\item 
+void \hyperlink{class_config_dc8163da35c14b46f65c79bdcfea4d6e}{TacharPersonaje} (int i, int j)
+\begin{CompactList}\small\item\em Tacha personaje i, j del tablero humano. \item\end{CompactList}\item 
+void \hyperlink{class_config_b0ece1c4e60dc3fc432b70b710ec7c33}{TacharPersonajeM} (int i, int j)
+\begin{CompactList}\small\item\em Tacha personaje i, j del tablero maquina. \item\end{CompactList}\item 
+void \hyperlink{class_config_584298fc8c9442a2be186d3a39776859}{PintaCrono} (long int \hyperlink{class_config_ab38937ac969b6c7a1bb516829a4b3d7}{tiempo})
+\begin{CompactList}\small\item\em Pinta el Cronometro segun el tiempo dado. \item\end{CompactList}\item 
+int \hyperlink{class_config_d6ab8b5ecdb0602a9d3b6b70ed09f766}{TiempoEspera} ()
+\begin{CompactList}\small\item\em Devuelve el tiempo\_\-espera. \item\end{CompactList}\item 
+void \hyperlink{class_config_5502bfd9175981e9a5c8543e618a2ace}{ReiniciaCrono} ()
+\begin{CompactList}\small\item\em Repinta el cronometro. \item\end{CompactList}\item 
+void \hyperlink{class_config_4f1b69ffddd53323755b960ceaa07281}{PintaPuntuacion} (int puntuacion)
+\begin{CompactList}\small\item\em Pinta la Puntuacion que se le pasa por parametros. \item\end{CompactList}\item 
+void \hyperlink{class_config_41b3ad0b583abb4dcd8a0119d5bdb166}{LimpiaPuntuacion} ()
+\begin{CompactList}\small\item\em Limpia la puntuacion para evitar sobreescrituras. \item\end{CompactList}\item 
+int \hyperlink{class_config_80c099b02be9635d3245daf2e05bb6e6}{Ventancho} ()
+\begin{CompactList}\small\item\em Devuelve el ancho de la ventana. \item\end{CompactList}\item 
+int \hyperlink{class_config_db1372196f96192c9c8a77ff8c3147c7}{Ventalto} ()
+\begin{CompactList}\small\item\em Devuelve el alto de la ventana. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Atributos públicos}
+\begin{CompactItemize}
+\item 
+int \hyperlink{class_config_375dbaaec6f89886b6195655b7f798fa}{vent\_\-alto}
+\begin{CompactList}\small\item\em Opciones Generales. \item\end{CompactList}\item 
+int \hyperlink{class_config_b3dd58673f2af65f7ae5d801daf8c448}{vent\_\-ancho}
+\item 
+int \hyperlink{class_config_2200cb13ef26eee671b9a1c1de4bfb2f}{nft}
+\item 
+int \hyperlink{class_config_e234bd53f1f5cf692f15509f82ca1233}{nct}
+\item 
+int \hyperlink{class_config_b1160d5fb2c2f5bb524f98b83bf47dc7}{sep\_\-alto}
+\item 
+int \hyperlink{class_config_f79dabb44eb858869d54dad5a35e50b2}{sep\_\-ancho}
+\item 
+\hyperlink{class_marco}{Marco} \hyperlink{class_config_6330c7b3a76652ae994fb700f9c5b0cd}{tablero\_\-humano}
+\begin{CompactList}\small\item\em \hyperlink{class_tablero}{Tablero} Humano. \item\end{CompactList}\item 
+\hyperlink{struct_color}{Color} \hyperlink{class_config_a1351994125131a976c61e8d8554c6d6}{th\_\-tachar}
+\item 
+\hyperlink{class_marco}{Marco} \hyperlink{class_config_27f29ca03d9307e6622fba1bba7159c8}{preguntas}
+\begin{CompactList}\small\item\em Parte \hyperlink{class_preguntas}{Preguntas}. \item\end{CompactList}\item 
+char $\ast$ \hyperlink{class_config_7346dfc8027f9d63ca5452fbb05dbfb5}{fuente}
+\item 
+int \hyperlink{class_config_e2a6648535112d37a98ee87e05073fc2}{pre\_\-tam\_\-fuente}
+\item 
+\hyperlink{struct_color}{Color} \hyperlink{class_config_0a6e9c45700357211744f32b60ac21f9}{pre\_\-fuente}
+\item 
+\hyperlink{class_marco}{Marco} \hyperlink{class_config_22f99a51ac181a6079c67e4a9074576b}{tablero\_\-maquina}
+\begin{CompactList}\small\item\em \hyperlink{class_tablero}{Tablero} Maquina. \item\end{CompactList}\item 
+\hyperlink{struct_color}{Color} \hyperlink{class_config_3c9384bbc30ffeb40fa83a79b96c45fd}{tm\_\-tachar}
+\item 
+\hyperlink{class_marco}{Marco} \hyperlink{class_config_37dfa4fc481f1d7096f41a6f9545d7ff}{jugardor1}
+\begin{CompactList}\small\item\em Jugador1. \item\end{CompactList}\item 
+\hyperlink{class_marco}{Marco} \hyperlink{class_config_915ba524a7bc39f6200c868e1229c1e2}{jugador2}
+\begin{CompactList}\small\item\em Jugador2. \item\end{CompactList}\item 
+\hyperlink{class_marco}{Marco} \hyperlink{class_config_47db6265e31072da47a2062fda7971e1}{botones}
+\begin{CompactList}\small\item\em Recuadro de botones. \item\end{CompactList}\item 
+\hyperlink{class_marco}{Marco} \hyperlink{class_config_ab38937ac969b6c7a1bb516829a4b3d7}{tiempo}
+\begin{CompactList}\small\item\em Tiempo acumulado. \item\end{CompactList}\item 
+\hyperlink{class_marco}{Marco} \hyperlink{class_config_ac6a9b8b0f11a7016886a6250444e950}{stop}
+\begin{CompactList}\small\item\em Boton STOP. \item\end{CompactList}\item 
+\hyperlink{class_marco}{Marco} \hyperlink{class_config_221e1619fe58f93b4aa3369b6388ae76}{conometro}
+\begin{CompactList}\small\item\em Conometro. \item\end{CompactList}\item 
+\hyperlink{class_marco}{Marco} \hyperlink{class_config_25cedb2b9bacdadfa4e138d93d621653}{restaurar}
+\begin{CompactList}\small\item\em Cuadro restaurar. \item\end{CompactList}\item 
+\hyperlink{struct_color}{Color} \hyperlink{class_config_d522e3624b073006515daeeb2a7b6bc1}{tiempo\_\-pasado}
+\item 
+char $\ast$ \hyperlink{class_config_fb529bc47d1bf967f429261d57da7786}{fuente\_\-boton}
+\begin{CompactList}\small\item\em Fuente Botones. \item\end{CompactList}\item 
+int \hyperlink{class_config_aa23e90f3ee9ef5b23e6381bc51aa58a}{tam\_\-bot}
+\item 
+\hyperlink{struct_color}{Color} \hyperlink{class_config_10426677e6f5a372ddf4bfea5da6f3d6}{fuente\_\-c\_\-boton}
+\item 
+\hyperlink{class_marco}{Marco} \hyperlink{class_config_566edeb58b797aac802596fedd9e133b}{terminal}
+\begin{CompactList}\small\item\em Terminal. \item\end{CompactList}\item 
+char $\ast$ \hyperlink{class_config_a384377656d83174474d2a3db85b9b53}{fuente\_\-ter}
+\item 
+int \hyperlink{class_config_4ed61ba67371ab3b4e796f6c085c970d}{tam\_\-fter}
+\item 
+\hyperlink{struct_color}{Color} \hyperlink{class_config_58b22a3c2857d0bde659cdf22642b654}{fuente\_\-c\_\-ter}
+\item 
+int \hyperlink{class_config_8c8a659e2f3e0e8ea61e719a4b0138f7}{lineas\_\-ter}
+\item 
+char $\ast$ \hyperlink{class_config_1232c4b290f0ab28e04eec3b6ca702e3}{car\_\-ocult}
+\begin{CompactList}\small\item\em caras ocultas \item\end{CompactList}\item 
+int \hyperlink{class_config_8f0e117c12295f853e0f39cb82bddad5}{tiempo\_\-espera}
+\begin{CompactList}\small\item\em tiempo \item\end{CompactList}\end{CompactItemize}
+\subsection*{Amigas}
+\begin{CompactItemize}
+\item 
+istream \& \hyperlink{class_config_d9d17872a79524063d3afa93725719e3}{operator$>$$>$} (istream \&is, \hyperlink{class_config}{Config} \&C)
+\begin{CompactList}\small\item\em Sobrecarga del operador $>$$>$. \item\end{CompactList}\item 
+ostream \& \hyperlink{class_config_281dd477583c5361ca8fbdd58a80ca72}{operator$<$$<$} (ostream \&os, \hyperlink{class_config}{Config} \&C)
+\begin{CompactList}\small\item\em Sobrecarga del operador $<$$<$. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{class_config_bd0c571c116924871e30444b192b792a}{
+\index{Config@{Config}!Config@{Config}}
+\index{Config@{Config}!Config@{Config}}
+\subsubsection[{Config}]{\setlength{\rightskip}{0pt plus 5cm}Config::Config ()}}
+\label{class_config_bd0c571c116924871e30444b192b792a}
+
+
+Constructor. 
+
+\hypertarget{class_config_543dce59b66475c5108088ee4ce1cdfc}{
+\index{Config@{Config}!$\sim$Config@{$\sim$Config}}
+\index{$\sim$Config@{$\sim$Config}!Config@{Config}}
+\subsubsection[{$\sim$Config}]{\setlength{\rightskip}{0pt plus 5cm}Config::$\sim$Config ()}}
+\label{class_config_543dce59b66475c5108088ee4ce1cdfc}
+
+
+Destructor. 
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{class_config_7f64981766eaccc7726295beb6e06d1a}{
+\index{Config@{Config}!Columnas@{Columnas}}
+\index{Columnas@{Columnas}!Config@{Config}}
+\subsubsection[{Columnas}]{\setlength{\rightskip}{0pt plus 5cm}int Config::Columnas ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_config_7f64981766eaccc7726295beb6e06d1a}
+
+
+Devuelve el valor de nct. 
+
+\hypertarget{class_config_bef122e837338a9bcc4c2b0a95866d31}{
+\index{Config@{Config}!DescubreOcultoJ2@{DescubreOcultoJ2}}
+\index{DescubreOcultoJ2@{DescubreOcultoJ2}!Config@{Config}}
+\subsubsection[{DescubreOcultoJ2}]{\setlength{\rightskip}{0pt plus 5cm}void Config::DescubreOcultoJ2 ({\bf Personaje} {\em P})}}
+\label{class_config_bef122e837338a9bcc4c2b0a95866d31}
+
+
+Descubre el \hyperlink{class_personaje}{Personaje} oculto de la Maquina. 
+
+\hypertarget{class_config_5861894c33eea7cec9523494912a295a}{
+\index{Config@{Config}!DibujaCaras@{DibujaCaras}}
+\index{DibujaCaras@{DibujaCaras}!Config@{Config}}
+\subsubsection[{DibujaCaras}]{\setlength{\rightskip}{0pt plus 5cm}void Config::DibujaCaras ({\bf Tablero} \& {\em T})}}
+\label{class_config_5861894c33eea7cec9523494912a295a}
+
+
+Dibuja graficamente todas las caras que estan en el tablero. 
+
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em T}]Se le pasa un \hyperlink{class_tablero}{Tablero} \end{description}
+\end{Desc}
+\hypertarget{class_config_9f697dc06ed8ea10eb674ffa747bbdab}{
+\index{Config@{Config}!DibujaCarasOcultas@{DibujaCarasOcultas}}
+\index{DibujaCarasOcultas@{DibujaCarasOcultas}!Config@{Config}}
+\subsubsection[{DibujaCarasOcultas}]{\setlength{\rightskip}{0pt plus 5cm}void Config::DibujaCarasOcultas (char $\ast$ {\em img})}}
+\label{class_config_9f697dc06ed8ea10eb674ffa747bbdab}
+
+
+Dibuja las Caras ocultas del tablero de la maquina. 
+
+\hypertarget{class_config_d2717716bb3e5cbca52b4fb906cfc2b0}{
+\index{Config@{Config}!EncuentraCoordenadas@{EncuentraCoordenadas}}
+\index{EncuentraCoordenadas@{EncuentraCoordenadas}!Config@{Config}}
+\subsubsection[{EncuentraCoordenadas}]{\setlength{\rightskip}{0pt plus 5cm}int Config::EncuentraCoordenadas (int {\em x}, \/  int {\em y}, \/  int \& {\em i}, \/  int \& {\em j})}}
+\label{class_config_d2717716bb3e5cbca52b4fb906cfc2b0}
+
+
+Pasando unas coordenadas de raton devuelve unas coordenadas de matriz. 
+
+\begin{Desc}
+\item[Devuelve:]0 si ha encontrado en matriz 
+
+-1 si ha pinchado en el boton stop 
+
+-2 si ha pinchado en el boton RESTAURAR 
+
+-3 si no ha pinchado en los anteriores \end{Desc}
+\hypertarget{class_config_63b35552c2db0e6bfadf386a6df6cc8b}{
+\index{Config@{Config}!Filas@{Filas}}
+\index{Filas@{Filas}!Config@{Config}}
+\subsubsection[{Filas}]{\setlength{\rightskip}{0pt plus 5cm}int Config::Filas ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_config_63b35552c2db0e6bfadf386a6df6cc8b}
+
+
+Devuelve el valor de nft. 
+
+\hypertarget{class_config_41b3ad0b583abb4dcd8a0119d5bdb166}{
+\index{Config@{Config}!LimpiaPuntuacion@{LimpiaPuntuacion}}
+\index{LimpiaPuntuacion@{LimpiaPuntuacion}!Config@{Config}}
+\subsubsection[{LimpiaPuntuacion}]{\setlength{\rightskip}{0pt plus 5cm}void Config::LimpiaPuntuacion ()}}
+\label{class_config_41b3ad0b583abb4dcd8a0119d5bdb166}
+
+
+Limpia la puntuacion para evitar sobreescrituras. 
+
+\hypertarget{class_config_38a07e218d50496b9b93e5bd4ab9956f}{
+\index{Config@{Config}!PintaConfig@{PintaConfig}}
+\index{PintaConfig@{PintaConfig}!Config@{Config}}
+\subsubsection[{PintaConfig}]{\setlength{\rightskip}{0pt plus 5cm}void Config::PintaConfig ()}}
+\label{class_config_38a07e218d50496b9b93e5bd4ab9956f}
+
+
+Dibuja graficamente toda la configuración. 
+
+
+
+METER COLORES FUENTES!!! \hypertarget{class_config_584298fc8c9442a2be186d3a39776859}{
+\index{Config@{Config}!PintaCrono@{PintaCrono}}
+\index{PintaCrono@{PintaCrono}!Config@{Config}}
+\subsubsection[{PintaCrono}]{\setlength{\rightskip}{0pt plus 5cm}void Config::PintaCrono (long int {\em tiempo})}}
+\label{class_config_584298fc8c9442a2be186d3a39776859}
+
+
+Pinta el Cronometro segun el tiempo dado. 
+
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em tiempo}]El tiempo que CronometroValor da \end{description}
+\end{Desc}
+\hypertarget{class_config_a65b0dec7dbb915a147f0e1a48177cfc}{
+\index{Config@{Config}!PintaOcultoJ1@{PintaOcultoJ1}}
+\index{PintaOcultoJ1@{PintaOcultoJ1}!Config@{Config}}
+\subsubsection[{PintaOcultoJ1}]{\setlength{\rightskip}{0pt plus 5cm}void Config::PintaOcultoJ1 ({\bf Personaje} {\em P})}}
+\label{class_config_a65b0dec7dbb915a147f0e1a48177cfc}
+
+
+Dibuja el \hyperlink{class_personaje}{Personaje} del Jugador1. 
+
+\hypertarget{class_config_1d4493399b5138963924586b02daf6ad}{
+\index{Config@{Config}!PintaOcultoJ2@{PintaOcultoJ2}}
+\index{PintaOcultoJ2@{PintaOcultoJ2}!Config@{Config}}
+\subsubsection[{PintaOcultoJ2}]{\setlength{\rightskip}{0pt plus 5cm}void Config::PintaOcultoJ2 (char $\ast$ {\em img})}}
+\label{class_config_1d4493399b5138963924586b02daf6ad}
+
+
+Dibuja el \hyperlink{class_personaje}{Personaje} Oculto de la Maquina. 
+
+\hypertarget{class_config_69dbcf835071f978ec360958ee54860e}{
+\index{Config@{Config}!PintaPreguntas@{PintaPreguntas}}
+\index{PintaPreguntas@{PintaPreguntas}!Config@{Config}}
+\subsubsection[{PintaPreguntas}]{\setlength{\rightskip}{0pt plus 5cm}void Config::PintaPreguntas ({\bf Preguntas} \& {\em P})}}
+\label{class_config_69dbcf835071f978ec360958ee54860e}
+
+
+Dibuja en el entorno grafico todas las \hyperlink{class_preguntas}{Preguntas}. 
+
+\hypertarget{class_config_4f1b69ffddd53323755b960ceaa07281}{
+\index{Config@{Config}!PintaPuntuacion@{PintaPuntuacion}}
+\index{PintaPuntuacion@{PintaPuntuacion}!Config@{Config}}
+\subsubsection[{PintaPuntuacion}]{\setlength{\rightskip}{0pt plus 5cm}void Config::PintaPuntuacion (int {\em puntuacion})}}
+\label{class_config_4f1b69ffddd53323755b960ceaa07281}
+
+
+Pinta la Puntuacion que se le pasa por parametros. 
+
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em tiempo}]es el tiempo que se le pasa para pintar el cronometro \end{description}
+\end{Desc}
+\hypertarget{class_config_fc16e01f77244e2ea4786c814cb4fa99}{
+\index{Config@{Config}!PintaTerminal@{PintaTerminal}}
+\index{PintaTerminal@{PintaTerminal}!Config@{Config}}
+\subsubsection[{PintaTerminal}]{\setlength{\rightskip}{0pt plus 5cm}void Config::PintaTerminal (char $\ast$ {\em cad}, \/  {\bf Cadenas} \& {\em C})}}
+\label{class_config_fc16e01f77244e2ea4786c814cb4fa99}
+
+
+Escribe la cadena cad en el terminal. 
+
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em cad}]cadena que queremos escribir en el terminal \item[{\em C}]Buffer donde almacenamos la conversacion \end{description}
+\end{Desc}
+\hypertarget{class_config_6098dc6aed67f0e0df613d56cceeddc7}{
+\index{Config@{Config}!Recogedatos@{Recogedatos}}
+\index{Recogedatos@{Recogedatos}!Config@{Config}}
+\subsubsection[{Recogedatos}]{\setlength{\rightskip}{0pt plus 5cm}int Config::Recogedatos ({\bf Preguntas} \& {\em P})}}
+\label{class_config_6098dc6aed67f0e0df613d56cceeddc7}
+
+
+Recoge por teclado todos los datos. 
+
+\hypertarget{class_config_5502bfd9175981e9a5c8543e618a2ace}{
+\index{Config@{Config}!ReiniciaCrono@{ReiniciaCrono}}
+\index{ReiniciaCrono@{ReiniciaCrono}!Config@{Config}}
+\subsubsection[{ReiniciaCrono}]{\setlength{\rightskip}{0pt plus 5cm}void Config::ReiniciaCrono ()}}
+\label{class_config_5502bfd9175981e9a5c8543e618a2ace}
+
+
+Repinta el cronometro. 
+
+\hypertarget{class_config_dc8163da35c14b46f65c79bdcfea4d6e}{
+\index{Config@{Config}!TacharPersonaje@{TacharPersonaje}}
+\index{TacharPersonaje@{TacharPersonaje}!Config@{Config}}
+\subsubsection[{TacharPersonaje}]{\setlength{\rightskip}{0pt plus 5cm}void Config::TacharPersonaje (int {\em i}, \/  int {\em j})}}
+\label{class_config_dc8163da35c14b46f65c79bdcfea4d6e}
+
+
+Tacha personaje i, j del tablero humano. 
+
+\hypertarget{class_config_b0ece1c4e60dc3fc432b70b710ec7c33}{
+\index{Config@{Config}!TacharPersonajeM@{TacharPersonajeM}}
+\index{TacharPersonajeM@{TacharPersonajeM}!Config@{Config}}
+\subsubsection[{TacharPersonajeM}]{\setlength{\rightskip}{0pt plus 5cm}void Config::TacharPersonajeM (int {\em i}, \/  int {\em j})}}
+\label{class_config_b0ece1c4e60dc3fc432b70b710ec7c33}
+
+
+Tacha personaje i, j del tablero maquina. 
+
+\hypertarget{class_config_d6ab8b5ecdb0602a9d3b6b70ed09f766}{
+\index{Config@{Config}!TiempoEspera@{TiempoEspera}}
+\index{TiempoEspera@{TiempoEspera}!Config@{Config}}
+\subsubsection[{TiempoEspera}]{\setlength{\rightskip}{0pt plus 5cm}int Config::TiempoEspera ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_config_d6ab8b5ecdb0602a9d3b6b70ed09f766}
+
+
+Devuelve el tiempo\_\-espera. 
+
+\hypertarget{class_config_db1372196f96192c9c8a77ff8c3147c7}{
+\index{Config@{Config}!Ventalto@{Ventalto}}
+\index{Ventalto@{Ventalto}!Config@{Config}}
+\subsubsection[{Ventalto}]{\setlength{\rightskip}{0pt plus 5cm}int Config::Ventalto ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_config_db1372196f96192c9c8a77ff8c3147c7}
+
+
+Devuelve el alto de la ventana. 
+
+\hypertarget{class_config_80c099b02be9635d3245daf2e05bb6e6}{
+\index{Config@{Config}!Ventancho@{Ventancho}}
+\index{Ventancho@{Ventancho}!Config@{Config}}
+\subsubsection[{Ventancho}]{\setlength{\rightskip}{0pt plus 5cm}int Config::Ventancho ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_config_80c099b02be9635d3245daf2e05bb6e6}
+
+
+Devuelve el ancho de la ventana. 
+
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\hypertarget{class_config_281dd477583c5361ca8fbdd58a80ca72}{
+\index{Config@{Config}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Config@{Config}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (ostream \& {\em os}, \/  {\bf Config} \& {\em C})\hspace{0.3cm}{\tt  \mbox{[}friend\mbox{]}}}}
+\label{class_config_281dd477583c5361ca8fbdd58a80ca72}
+
+
+Sobrecarga del operador $<$$<$. 
+
+\hypertarget{class_config_d9d17872a79524063d3afa93725719e3}{
+\index{Config@{Config}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Config@{Config}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (istream \& {\em is}, \/  {\bf Config} \& {\em C})\hspace{0.3cm}{\tt  \mbox{[}friend\mbox{]}}}}
+\label{class_config_d9d17872a79524063d3afa93725719e3}
+
+
+Sobrecarga del operador $>$$>$. 
+
+
+
+\subsection{Documentación de los datos miembro}
+\hypertarget{class_config_47db6265e31072da47a2062fda7971e1}{
+\index{Config@{Config}!botones@{botones}}
+\index{botones@{botones}!Config@{Config}}
+\subsubsection[{botones}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Marco} {\bf Config::botones}}}
+\label{class_config_47db6265e31072da47a2062fda7971e1}
+
+
+Recuadro de botones. 
+
+\hypertarget{class_config_1232c4b290f0ab28e04eec3b6ca702e3}{
+\index{Config@{Config}!car\_\-ocult@{car\_\-ocult}}
+\index{car\_\-ocult@{car\_\-ocult}!Config@{Config}}
+\subsubsection[{car\_\-ocult}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf Config::car\_\-ocult}}}
+\label{class_config_1232c4b290f0ab28e04eec3b6ca702e3}
+
+
+caras ocultas 
+
+\hypertarget{class_config_221e1619fe58f93b4aa3369b6388ae76}{
+\index{Config@{Config}!conometro@{conometro}}
+\index{conometro@{conometro}!Config@{Config}}
+\subsubsection[{conometro}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Marco} {\bf Config::conometro}}}
+\label{class_config_221e1619fe58f93b4aa3369b6388ae76}
+
+
+Conometro. 
+
+\hypertarget{class_config_7346dfc8027f9d63ca5452fbb05dbfb5}{
+\index{Config@{Config}!fuente@{fuente}}
+\index{fuente@{fuente}!Config@{Config}}
+\subsubsection[{fuente}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf Config::fuente}}}
+\label{class_config_7346dfc8027f9d63ca5452fbb05dbfb5}
+
+
+\hypertarget{class_config_fb529bc47d1bf967f429261d57da7786}{
+\index{Config@{Config}!fuente\_\-boton@{fuente\_\-boton}}
+\index{fuente\_\-boton@{fuente\_\-boton}!Config@{Config}}
+\subsubsection[{fuente\_\-boton}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf Config::fuente\_\-boton}}}
+\label{class_config_fb529bc47d1bf967f429261d57da7786}
+
+
+Fuente Botones. 
+
+\hypertarget{class_config_10426677e6f5a372ddf4bfea5da6f3d6}{
+\index{Config@{Config}!fuente\_\-c\_\-boton@{fuente\_\-c\_\-boton}}
+\index{fuente\_\-c\_\-boton@{fuente\_\-c\_\-boton}!Config@{Config}}
+\subsubsection[{fuente\_\-c\_\-boton}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} {\bf Config::fuente\_\-c\_\-boton}}}
+\label{class_config_10426677e6f5a372ddf4bfea5da6f3d6}
+
+
+\hypertarget{class_config_58b22a3c2857d0bde659cdf22642b654}{
+\index{Config@{Config}!fuente\_\-c\_\-ter@{fuente\_\-c\_\-ter}}
+\index{fuente\_\-c\_\-ter@{fuente\_\-c\_\-ter}!Config@{Config}}
+\subsubsection[{fuente\_\-c\_\-ter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} {\bf Config::fuente\_\-c\_\-ter}}}
+\label{class_config_58b22a3c2857d0bde659cdf22642b654}
+
+
+\hypertarget{class_config_a384377656d83174474d2a3db85b9b53}{
+\index{Config@{Config}!fuente\_\-ter@{fuente\_\-ter}}
+\index{fuente\_\-ter@{fuente\_\-ter}!Config@{Config}}
+\subsubsection[{fuente\_\-ter}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf Config::fuente\_\-ter}}}
+\label{class_config_a384377656d83174474d2a3db85b9b53}
+
+
+\hypertarget{class_config_915ba524a7bc39f6200c868e1229c1e2}{
+\index{Config@{Config}!jugador2@{jugador2}}
+\index{jugador2@{jugador2}!Config@{Config}}
+\subsubsection[{jugador2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Marco} {\bf Config::jugador2}}}
+\label{class_config_915ba524a7bc39f6200c868e1229c1e2}
+
+
+Jugador2. 
+
+\hypertarget{class_config_37dfa4fc481f1d7096f41a6f9545d7ff}{
+\index{Config@{Config}!jugardor1@{jugardor1}}
+\index{jugardor1@{jugardor1}!Config@{Config}}
+\subsubsection[{jugardor1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Marco} {\bf Config::jugardor1}}}
+\label{class_config_37dfa4fc481f1d7096f41a6f9545d7ff}
+
+
+Jugador1. 
+
+\hypertarget{class_config_8c8a659e2f3e0e8ea61e719a4b0138f7}{
+\index{Config@{Config}!lineas\_\-ter@{lineas\_\-ter}}
+\index{lineas\_\-ter@{lineas\_\-ter}!Config@{Config}}
+\subsubsection[{lineas\_\-ter}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Config::lineas\_\-ter}}}
+\label{class_config_8c8a659e2f3e0e8ea61e719a4b0138f7}
+
+
+\hypertarget{class_config_e234bd53f1f5cf692f15509f82ca1233}{
+\index{Config@{Config}!nct@{nct}}
+\index{nct@{nct}!Config@{Config}}
+\subsubsection[{nct}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Config::nct}}}
+\label{class_config_e234bd53f1f5cf692f15509f82ca1233}
+
+
+\hypertarget{class_config_2200cb13ef26eee671b9a1c1de4bfb2f}{
+\index{Config@{Config}!nft@{nft}}
+\index{nft@{nft}!Config@{Config}}
+\subsubsection[{nft}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Config::nft}}}
+\label{class_config_2200cb13ef26eee671b9a1c1de4bfb2f}
+
+
+\hypertarget{class_config_0a6e9c45700357211744f32b60ac21f9}{
+\index{Config@{Config}!pre\_\-fuente@{pre\_\-fuente}}
+\index{pre\_\-fuente@{pre\_\-fuente}!Config@{Config}}
+\subsubsection[{pre\_\-fuente}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} {\bf Config::pre\_\-fuente}}}
+\label{class_config_0a6e9c45700357211744f32b60ac21f9}
+
+
+\hypertarget{class_config_e2a6648535112d37a98ee87e05073fc2}{
+\index{Config@{Config}!pre\_\-tam\_\-fuente@{pre\_\-tam\_\-fuente}}
+\index{pre\_\-tam\_\-fuente@{pre\_\-tam\_\-fuente}!Config@{Config}}
+\subsubsection[{pre\_\-tam\_\-fuente}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Config::pre\_\-tam\_\-fuente}}}
+\label{class_config_e2a6648535112d37a98ee87e05073fc2}
+
+
+\hypertarget{class_config_27f29ca03d9307e6622fba1bba7159c8}{
+\index{Config@{Config}!preguntas@{preguntas}}
+\index{preguntas@{preguntas}!Config@{Config}}
+\subsubsection[{preguntas}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Marco} {\bf Config::preguntas}}}
+\label{class_config_27f29ca03d9307e6622fba1bba7159c8}
+
+
+Parte \hyperlink{class_preguntas}{Preguntas}. 
+
+\hypertarget{class_config_25cedb2b9bacdadfa4e138d93d621653}{
+\index{Config@{Config}!restaurar@{restaurar}}
+\index{restaurar@{restaurar}!Config@{Config}}
+\subsubsection[{restaurar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Marco} {\bf Config::restaurar}}}
+\label{class_config_25cedb2b9bacdadfa4e138d93d621653}
+
+
+Cuadro restaurar. 
+
+\hypertarget{class_config_b1160d5fb2c2f5bb524f98b83bf47dc7}{
+\index{Config@{Config}!sep\_\-alto@{sep\_\-alto}}
+\index{sep\_\-alto@{sep\_\-alto}!Config@{Config}}
+\subsubsection[{sep\_\-alto}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Config::sep\_\-alto}}}
+\label{class_config_b1160d5fb2c2f5bb524f98b83bf47dc7}
+
+
+\hypertarget{class_config_f79dabb44eb858869d54dad5a35e50b2}{
+\index{Config@{Config}!sep\_\-ancho@{sep\_\-ancho}}
+\index{sep\_\-ancho@{sep\_\-ancho}!Config@{Config}}
+\subsubsection[{sep\_\-ancho}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Config::sep\_\-ancho}}}
+\label{class_config_f79dabb44eb858869d54dad5a35e50b2}
+
+
+\hypertarget{class_config_ac6a9b8b0f11a7016886a6250444e950}{
+\index{Config@{Config}!stop@{stop}}
+\index{stop@{stop}!Config@{Config}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Marco} {\bf Config::stop}}}
+\label{class_config_ac6a9b8b0f11a7016886a6250444e950}
+
+
+Boton STOP. 
+
+\hypertarget{class_config_6330c7b3a76652ae994fb700f9c5b0cd}{
+\index{Config@{Config}!tablero\_\-humano@{tablero\_\-humano}}
+\index{tablero\_\-humano@{tablero\_\-humano}!Config@{Config}}
+\subsubsection[{tablero\_\-humano}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Marco} {\bf Config::tablero\_\-humano}}}
+\label{class_config_6330c7b3a76652ae994fb700f9c5b0cd}
+
+
+\hyperlink{class_tablero}{Tablero} Humano. 
+
+\hypertarget{class_config_22f99a51ac181a6079c67e4a9074576b}{
+\index{Config@{Config}!tablero\_\-maquina@{tablero\_\-maquina}}
+\index{tablero\_\-maquina@{tablero\_\-maquina}!Config@{Config}}
+\subsubsection[{tablero\_\-maquina}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Marco} {\bf Config::tablero\_\-maquina}}}
+\label{class_config_22f99a51ac181a6079c67e4a9074576b}
+
+
+\hyperlink{class_tablero}{Tablero} Maquina. 
+
+\hypertarget{class_config_aa23e90f3ee9ef5b23e6381bc51aa58a}{
+\index{Config@{Config}!tam\_\-bot@{tam\_\-bot}}
+\index{tam\_\-bot@{tam\_\-bot}!Config@{Config}}
+\subsubsection[{tam\_\-bot}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Config::tam\_\-bot}}}
+\label{class_config_aa23e90f3ee9ef5b23e6381bc51aa58a}
+
+
+\hypertarget{class_config_4ed61ba67371ab3b4e796f6c085c970d}{
+\index{Config@{Config}!tam\_\-fter@{tam\_\-fter}}
+\index{tam\_\-fter@{tam\_\-fter}!Config@{Config}}
+\subsubsection[{tam\_\-fter}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Config::tam\_\-fter}}}
+\label{class_config_4ed61ba67371ab3b4e796f6c085c970d}
+
+
+\hypertarget{class_config_566edeb58b797aac802596fedd9e133b}{
+\index{Config@{Config}!terminal@{terminal}}
+\index{terminal@{terminal}!Config@{Config}}
+\subsubsection[{terminal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Marco} {\bf Config::terminal}}}
+\label{class_config_566edeb58b797aac802596fedd9e133b}
+
+
+Terminal. 
+
+\hypertarget{class_config_a1351994125131a976c61e8d8554c6d6}{
+\index{Config@{Config}!th\_\-tachar@{th\_\-tachar}}
+\index{th\_\-tachar@{th\_\-tachar}!Config@{Config}}
+\subsubsection[{th\_\-tachar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} {\bf Config::th\_\-tachar}}}
+\label{class_config_a1351994125131a976c61e8d8554c6d6}
+
+
+\hypertarget{class_config_ab38937ac969b6c7a1bb516829a4b3d7}{
+\index{Config@{Config}!tiempo@{tiempo}}
+\index{tiempo@{tiempo}!Config@{Config}}
+\subsubsection[{tiempo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Marco} {\bf Config::tiempo}}}
+\label{class_config_ab38937ac969b6c7a1bb516829a4b3d7}
+
+
+Tiempo acumulado. 
+
+\hypertarget{class_config_8f0e117c12295f853e0f39cb82bddad5}{
+\index{Config@{Config}!tiempo\_\-espera@{tiempo\_\-espera}}
+\index{tiempo\_\-espera@{tiempo\_\-espera}!Config@{Config}}
+\subsubsection[{tiempo\_\-espera}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Config::tiempo\_\-espera}}}
+\label{class_config_8f0e117c12295f853e0f39cb82bddad5}
+
+
+tiempo 
+
+\hypertarget{class_config_d522e3624b073006515daeeb2a7b6bc1}{
+\index{Config@{Config}!tiempo\_\-pasado@{tiempo\_\-pasado}}
+\index{tiempo\_\-pasado@{tiempo\_\-pasado}!Config@{Config}}
+\subsubsection[{tiempo\_\-pasado}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} {\bf Config::tiempo\_\-pasado}}}
+\label{class_config_d522e3624b073006515daeeb2a7b6bc1}
+
+
+\hypertarget{class_config_3c9384bbc30ffeb40fa83a79b96c45fd}{
+\index{Config@{Config}!tm\_\-tachar@{tm\_\-tachar}}
+\index{tm\_\-tachar@{tm\_\-tachar}!Config@{Config}}
+\subsubsection[{tm\_\-tachar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} {\bf Config::tm\_\-tachar}}}
+\label{class_config_3c9384bbc30ffeb40fa83a79b96c45fd}
+
+
+\hypertarget{class_config_375dbaaec6f89886b6195655b7f798fa}{
+\index{Config@{Config}!vent\_\-alto@{vent\_\-alto}}
+\index{vent\_\-alto@{vent\_\-alto}!Config@{Config}}
+\subsubsection[{vent\_\-alto}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Config::vent\_\-alto}}}
+\label{class_config_375dbaaec6f89886b6195655b7f798fa}
+
+
+Opciones Generales. 
+
+\hypertarget{class_config_b3dd58673f2af65f7ae5d801daf8c448}{
+\index{Config@{Config}!vent\_\-ancho@{vent\_\-ancho}}
+\index{vent\_\-ancho@{vent\_\-ancho}!Config@{Config}}
+\subsubsection[{vent\_\-ancho}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Config::vent\_\-ancho}}}
+\label{class_config_b3dd58673f2af65f7ae5d801daf8c448}
+
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros:\begin{CompactItemize}
+\item 
+/mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/include/\hyperlink{config_8h}{config.h}\item 
+/mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/src/\hyperlink{config_8cpp}{config.cpp}\end{CompactItemize}

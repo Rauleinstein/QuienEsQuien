@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Quien es quien: Fichero Fuente /mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/include/personaje.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+    </ul>
+  </div>
+<h1>/mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/include/personaje.h</h1><a href="personaje_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef _personaje_h_</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define _personaje_h_</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span><span class="preprocessor">#include &lt;<a class="code" href="ccrasgos_8h.html">ccrasgos.h</a>&gt;</span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;cstring&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;<a class="code" href="utilidades_8h.html">utilidades.h</a>&gt;</span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 <span class="keyword">using namespace </span>std;
+<a name="l00009"></a>00009 
+<a name="l00010"></a><a class="code" href="class_personaje.html">00010</a> <span class="keyword">class </span><a class="code" href="class_personaje.html">Personaje</a>{
+<a name="l00011"></a>00011         <span class="keywordtype">char</span> * nombre;
+<a name="l00012"></a>00012         <span class="keywordtype">char</span> * ruta;
+<a name="l00013"></a>00013         <a class="code" href="class_c_rasgos.html">CRasgos</a> rasgos;
+<a name="l00014"></a>00014         <span class="keyword">public</span>:
+<a name="l00018"></a>00018                 <a class="code" href="class_personaje.html#9238a75aae652b20dd423e85cfa1ee17" title="Constructor.">Personaje</a>();
+<a name="l00022"></a>00022                 <a class="code" href="class_personaje.html#0b3c25862a6081aaee96e77c08edda29" title="Destructor.">~Personaje</a>();
+<a name="l00026"></a>00026                 <a class="code" href="class_personaje.html#9238a75aae652b20dd423e85cfa1ee17" title="Constructor.">Personaje</a>(<span class="keyword">const</span> <a class="code" href="class_personaje.html">Personaje</a> &amp;P);
+<a name="l00030"></a>00030                 <span class="keyword">friend</span> istream &amp;<a class="code" href="class_personaje.html#7cd04bde49bfa0ddbc0034d9358e34b0" title="Sobrecarga del operador &amp;gt;&amp;gt;.">operator&gt;&gt;</a>(istream &amp;is, <a class="code" href="class_personaje.html">Personaje</a> &amp;P);
+<a name="l00034"></a>00034                 <span class="keyword">friend</span> ostream &amp;<a class="code" href="class_personaje.html#5b0e555e2e3415573e9ab2d692150594" title="Sobrecarga del operador &amp;lt;&amp;lt;.">operator&lt;&lt;</a>(ostream &amp;os, <span class="keyword">const</span> <a class="code" href="class_personaje.html">Personaje</a> * &amp;O);
+<a name="l00038"></a>00038                 <a class="code" href="class_personaje.html">Personaje</a> &amp;<a class="code" href="class_personaje.html#c2d42e675ece1b69dbe59aa45b321774" title="Sobrecarga del operador =.">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_personaje.html">Personaje</a> &amp;P);
+<a name="l00042"></a>00042                 <span class="keywordtype">char</span> * <a class="code" href="class_personaje.html#97e98c33ff950a88922643931307a70b" title="Devuelve la ruta.">Ruta</a>();
+<a name="l00046"></a><a class="code" href="class_personaje.html#cfb48d84c94995523b450797e2c7a72f">00046</a>                 <a class="code" href="class_c_rasgos.html">CRasgos</a> <a class="code" href="class_personaje.html#cfb48d84c94995523b450797e2c7a72f" title="Devuelve los rasgos del personaje.">SacaRasgos</a>(){<span class="keywordflow">return</span> rasgos;}
+<a name="l00050"></a>00050                 <span class="keywordtype">bool</span> <a class="code" href="class_personaje.html#835c36dac86ff1b595dbdb3c5914b79c" title="Devuelve la respuesta del personaje a una pregunta.">Respuesta</a>(<span class="keywordtype">char</span> * pregunta_selec);
+<a name="l00051"></a>00051 };
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053 <span class="preprocessor">#endif</span>
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Generado el Tue Sep 1 19:24:44 2009 para Quien es quien por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

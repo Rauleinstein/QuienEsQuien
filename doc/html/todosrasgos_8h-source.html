@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Quien es quien: Fichero Fuente /mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/include/todosrasgos.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+    </ul>
+  </div>
+<h1>/mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/include/todosrasgos.h</h1><a href="todosrasgos_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//todosrasgos.h</span>
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="preprocessor">#ifndef _todosrasgos_h_</span>
+<a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define _todosrasgos_h_</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;cstring&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;<a class="code" href="rasgocomp_8h.html">rasgocomp.h</a>&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;<a class="code" href="utilidades_8h.html">utilidades.h</a>&gt;</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="keyword">using namespace </span>std;
+<a name="l00011"></a>00011 
+<a name="l00012"></a><a class="code" href="class_todosrasgos.html">00012</a> <span class="keyword">class </span><a class="code" href="class_todosrasgos.html">Todosrasgos</a> {
+<a name="l00013"></a>00013         <span class="keywordtype">int</span> n_rasgos;
+<a name="l00014"></a>00014         <a class="code" href="class_rasgoc.html">Rasgoc</a> * Rs;
+<a name="l00015"></a>00015         <span class="keyword">public</span>:
+<a name="l00019"></a>00019                 <a class="code" href="class_todosrasgos.html#8a31d936c54899e99dd9ab44a4a194c7" title="Constructor.">Todosrasgos</a>();
+<a name="l00023"></a>00023                 <a class="code" href="class_todosrasgos.html#07a2e654d9fe7d9de9b0a3bb496d4245" title="Destructor.">~Todosrasgos</a>();
+<a name="l00027"></a>00027                 <a class="code" href="class_todosrasgos.html#8a31d936c54899e99dd9ab44a4a194c7" title="Constructor.">Todosrasgos</a>(<span class="keyword">const</span> <a class="code" href="class_todosrasgos.html">Todosrasgos</a> &amp;T);
+<a name="l00031"></a>00031                 <a class="code" href="class_todosrasgos.html">Todosrasgos</a> &amp; <a class="code" href="class_todosrasgos.html#9a31115888d9c9df499b010c6024f450" title="Sobrecarga del operador =.">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_todosrasgos.html">Todosrasgos</a> &amp;T);
+<a name="l00035"></a><a class="code" href="class_todosrasgos.html#f0d797f1ccf3b1522ff6ab878723e62a">00035</a>                 <span class="keywordtype">int</span> <a class="code" href="class_todosrasgos.html#f0d797f1ccf3b1522ff6ab878723e62a" title="Devuelve el numero de rasgos.">Numerorasgos</a>(){<span class="keywordflow">return</span> this-&gt;n_rasgos;}
+<a name="l00039"></a><a class="code" href="class_todosrasgos.html#46e0f44b41dacf2a00c6d697e65b35a4">00039</a>                 <a class="code" href="class_rasgoc.html">Rasgoc</a> <a class="code" href="class_todosrasgos.html#46e0f44b41dacf2a00c6d697e65b35a4" title="Devuelve el rasgo n.">ExtraeRasgo</a>(<span class="keywordtype">int</span> n){<span class="keywordflow">return</span> this-&gt;Rs[n];}
+<a name="l00043"></a>00043                 <span class="keyword">friend</span> istream &amp; <a class="code" href="class_todosrasgos.html#b10d8e2982f53857984555835f8b0c39" title="Sobrecarga del operador &amp;gt;&amp;gt;.">operator&gt;&gt;</a>(istream &amp;is, <a class="code" href="class_todosrasgos.html">Todosrasgos</a> &amp;T);
+<a name="l00047"></a>00047                 <span class="keyword">friend</span> ostream &amp;<a class="code" href="class_todosrasgos.html#f668c78e104d9dd9ae3a3639709227b9" title="Sobrecarga del operador &amp;lt;&amp;lt;.">operator&lt;&lt;</a>(ostream &amp;os, <a class="code" href="class_todosrasgos.html">Todosrasgos</a> &amp;T);
+<a name="l00048"></a>00048 };
+<a name="l00049"></a>00049 <span class="preprocessor">#endif</span>
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Generado el Tue Sep 1 19:24:44 2009 para Quien es quien por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

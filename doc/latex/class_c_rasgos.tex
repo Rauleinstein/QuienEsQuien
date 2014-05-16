@@ -1,0 +1,136 @@
+\hypertarget{class_c_rasgos}{
+\section{Referencia de la Clase CRasgos}
+\label{class_c_rasgos}\index{CRasgos@{CRasgos}}
+}
+{\tt \#include $<$ccrasgos.h$>$}
+
+\subsection*{Métodos públicos}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_c_rasgos_f4ddb3b5ae04a6c3cc7696f01c508823}{CRasgos} ()
+\begin{CompactList}\small\item\em Constructor por defecto. \item\end{CompactList}\item 
+\hyperlink{class_c_rasgos_acd1dea2f1da5efa4f7b066712913940}{$\sim$CRasgos} ()
+\begin{CompactList}\small\item\em Destructor. \item\end{CompactList}\item 
+\hyperlink{class_c_rasgos_2d9e8f84bc7339fc3ffe38cb770910ea}{CRasgos} (const \hyperlink{class_c_rasgos}{CRasgos} \&Cop)
+\begin{CompactList}\small\item\em Constructor de copia. \item\end{CompactList}\item 
+void \hyperlink{class_c_rasgos_3af493672124ac9d4b94271c9004bda2}{MeterRasgo} (\hyperlink{class_rasgo}{Rasgo} $\ast$R)
+\begin{CompactList}\small\item\em Inserta el \hyperlink{class_rasgo}{Rasgo} R en el conjunto de rasgos. \item\end{CompactList}\item 
+int \hyperlink{class_c_rasgos_80199d2461b16fbba188ad696105257d}{Nrasgos} ()
+\begin{CompactList}\small\item\em Devuelve el numero de rasgos. \item\end{CompactList}\item 
+const \hyperlink{class_rasgo}{Rasgo} \hyperlink{class_c_rasgos_4ecb8e73d826f5d236e3caa2f86e954d}{SacarRasgo} (int n)
+\begin{CompactList}\small\item\em Devuelve el \hyperlink{class_rasgo}{Rasgo} dado por el int n. \item\end{CompactList}\item 
+\hyperlink{class_c_rasgos}{CRasgos} \& \hyperlink{class_c_rasgos_8783aed7d3c09e9f503b48efc84f3102}{operator=} (const \hyperlink{class_c_rasgos}{CRasgos} \&C)
+\begin{CompactList}\small\item\em Sobrecarga del operador =. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Amigas}
+\begin{CompactItemize}
+\item 
+istream \& \hyperlink{class_c_rasgos_b75cef1ff62ead35759d2993921b695d}{operator$>$$>$} (istream \&is, \hyperlink{class_c_rasgos}{CRasgos} \&C)
+\begin{CompactList}\small\item\em Sobrecarga del operador $>$$>$. \item\end{CompactList}\item 
+ostream \& \hyperlink{class_c_rasgos_1ecae6e3da0974de7223e11adedcec37}{operator$<$$<$} (ostream \&os, const \hyperlink{class_c_rasgos}{CRasgos} \&C)
+\begin{CompactList}\small\item\em Sobrecarga del operador $<$$<$. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{class_c_rasgos_f4ddb3b5ae04a6c3cc7696f01c508823}{
+\index{CRasgos@{CRasgos}!CRasgos@{CRasgos}}
+\index{CRasgos@{CRasgos}!CRasgos@{CRasgos}}
+\subsubsection[{CRasgos}]{\setlength{\rightskip}{0pt plus 5cm}CRasgos::CRasgos ()}}
+\label{class_c_rasgos_f4ddb3b5ae04a6c3cc7696f01c508823}
+
+
+Constructor por defecto. 
+
+\hypertarget{class_c_rasgos_acd1dea2f1da5efa4f7b066712913940}{
+\index{CRasgos@{CRasgos}!$\sim$CRasgos@{$\sim$CRasgos}}
+\index{$\sim$CRasgos@{$\sim$CRasgos}!CRasgos@{CRasgos}}
+\subsubsection[{$\sim$CRasgos}]{\setlength{\rightskip}{0pt plus 5cm}CRasgos::$\sim$CRasgos ()}}
+\label{class_c_rasgos_acd1dea2f1da5efa4f7b066712913940}
+
+
+Destructor. 
+
+\hypertarget{class_c_rasgos_2d9e8f84bc7339fc3ffe38cb770910ea}{
+\index{CRasgos@{CRasgos}!CRasgos@{CRasgos}}
+\index{CRasgos@{CRasgos}!CRasgos@{CRasgos}}
+\subsubsection[{CRasgos}]{\setlength{\rightskip}{0pt plus 5cm}CRasgos::CRasgos (const {\bf CRasgos} \& {\em Cop})}}
+\label{class_c_rasgos_2d9e8f84bc7339fc3ffe38cb770910ea}
+
+
+Constructor de copia. 
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{class_c_rasgos_3af493672124ac9d4b94271c9004bda2}{
+\index{CRasgos@{CRasgos}!MeterRasgo@{MeterRasgo}}
+\index{MeterRasgo@{MeterRasgo}!CRasgos@{CRasgos}}
+\subsubsection[{MeterRasgo}]{\setlength{\rightskip}{0pt plus 5cm}void CRasgos::MeterRasgo ({\bf Rasgo} $\ast$ {\em R})}}
+\label{class_c_rasgos_3af493672124ac9d4b94271c9004bda2}
+
+
+Inserta el \hyperlink{class_rasgo}{Rasgo} R en el conjunto de rasgos. 
+
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em R}]rasgo que le pasamos para que lo meta \end{description}
+\end{Desc}
+\hypertarget{class_c_rasgos_80199d2461b16fbba188ad696105257d}{
+\index{CRasgos@{CRasgos}!Nrasgos@{Nrasgos}}
+\index{Nrasgos@{Nrasgos}!CRasgos@{CRasgos}}
+\subsubsection[{Nrasgos}]{\setlength{\rightskip}{0pt plus 5cm}int CRasgos::Nrasgos ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_c_rasgos_80199d2461b16fbba188ad696105257d}
+
+
+Devuelve el numero de rasgos. 
+
+\hypertarget{class_c_rasgos_8783aed7d3c09e9f503b48efc84f3102}{
+\index{CRasgos@{CRasgos}!operator=@{operator=}}
+\index{operator=@{operator=}!CRasgos@{CRasgos}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CRasgos} \& CRasgos::operator= (const {\bf CRasgos} \& {\em C})}}
+\label{class_c_rasgos_8783aed7d3c09e9f503b48efc84f3102}
+
+
+Sobrecarga del operador =. 
+
+\hypertarget{class_c_rasgos_4ecb8e73d826f5d236e3caa2f86e954d}{
+\index{CRasgos@{CRasgos}!SacarRasgo@{SacarRasgo}}
+\index{SacarRasgo@{SacarRasgo}!CRasgos@{CRasgos}}
+\subsubsection[{SacarRasgo}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Rasgo} CRasgos::SacarRasgo (int {\em n})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_c_rasgos_4ecb8e73d826f5d236e3caa2f86e954d}
+
+
+Devuelve el \hyperlink{class_rasgo}{Rasgo} dado por el int n. 
+
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em n}]para saber el rasgo que queremos \end{description}
+\end{Desc}
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\hypertarget{class_c_rasgos_1ecae6e3da0974de7223e11adedcec37}{
+\index{CRasgos@{CRasgos}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!CRasgos@{CRasgos}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (ostream \& {\em os}, \/  const {\bf CRasgos} \& {\em C})\hspace{0.3cm}{\tt  \mbox{[}friend\mbox{]}}}}
+\label{class_c_rasgos_1ecae6e3da0974de7223e11adedcec37}
+
+
+Sobrecarga del operador $<$$<$. 
+
+\hypertarget{class_c_rasgos_b75cef1ff62ead35759d2993921b695d}{
+\index{CRasgos@{CRasgos}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!CRasgos@{CRasgos}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (istream \& {\em is}, \/  {\bf CRasgos} \& {\em C})\hspace{0.3cm}{\tt  \mbox{[}friend\mbox{]}}}}
+\label{class_c_rasgos_b75cef1ff62ead35759d2993921b695d}
+
+
+Sobrecarga del operador $>$$>$. 
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros:\begin{CompactItemize}
+\item 
+/mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/include/\hyperlink{ccrasgos_8h}{ccrasgos.h}\item 
+/mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/src/\hyperlink{ccrasgos_8cpp}{ccrasgos.cpp}\end{CompactItemize}

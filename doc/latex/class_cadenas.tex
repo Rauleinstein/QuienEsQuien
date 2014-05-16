@@ -1,0 +1,177 @@
+\hypertarget{class_cadenas}{
+\section{Referencia de la Clase Cadenas}
+\label{class_cadenas}\index{Cadenas@{Cadenas}}
+}
+{\tt \#include $<$cadena.h$>$}
+
+\subsection*{Métodos públicos}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_cadenas_29fe76fae8281718c0e04d56fbbdf6ac}{Cadenas} ()
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+\hyperlink{class_cadenas_909303b112dd23c0469003fba49d65e2}{Cadenas} (int n)
+\begin{CompactList}\small\item\em Constructor con parametros. \item\end{CompactList}\item 
+\hyperlink{class_cadenas_93aec818276ea7a5c0edead83b40c244}{Cadenas} (const \hyperlink{class_cadenas}{Cadenas} \&C)
+\begin{CompactList}\small\item\em Constructor de copia. \item\end{CompactList}\item 
+\hyperlink{class_cadenas_58595cf21afd1f9d11544dcf962ebccc}{$\sim$Cadenas} ()
+\begin{CompactList}\small\item\em Destructor. \item\end{CompactList}\item 
+void \hyperlink{class_cadenas_f0a2b9594b2e528f02a3d164740b3250}{AddCadena} (const char $\ast$cad)
+\begin{CompactList}\small\item\em Añade una cadena a una \hyperlink{class_cadenas}{Cadenas} ya construida. \item\end{CompactList}\item 
+void \hyperlink{class_cadenas_5d74cf072d9fbdbfe35d1b137f9fec23}{SetPal} (int p)
+\begin{CompactList}\small\item\em Pone el numero de palabras a p. \item\end{CompactList}\item 
+int \hyperlink{class_cadenas_4b56f36de7ebc136bcab0d5e988e46ee}{GetPal} ()
+\begin{CompactList}\small\item\em Devuelve el numero de palabras. \item\end{CompactList}\item 
+int \hyperlink{class_cadenas_0d370148819ec089adf75645d181671c}{Getocupadas} ()
+\begin{CompactList}\small\item\em Devuelve el numero de palabras ocupadas. \item\end{CompactList}\item 
+char $\ast$ \hyperlink{class_cadenas_2e84c2888f23b09add40633fbb3469e5}{GetCadena} (int i)
+\begin{CompactList}\small\item\em Devuelve la cadena de la posicion i. \item\end{CompactList}\item 
+\hyperlink{class_cadenas}{Cadenas} \& \hyperlink{class_cadenas_bb1fcc2b356de5fc9bb8d15c7162741c}{operator=} (const \hyperlink{class_cadenas}{Cadenas} \&C)
+\begin{CompactList}\small\item\em Sobrecarga del operator =. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Amigas}
+\begin{CompactItemize}
+\item 
+istream \& \hyperlink{class_cadenas_e0eb1eebcfce000da1a5084b76a8d11a}{operator$>$$>$} (istream \&is, \hyperlink{class_cadenas}{Cadenas} \&C)
+\begin{CompactList}\small\item\em Sobrecarga del operator $>$$>$. \item\end{CompactList}\item 
+ostream \& \hyperlink{class_cadenas_fb9ae08a4a831b348a5577c76e0b4a98}{operator$<$$<$} (ostream \&os, \hyperlink{class_cadenas}{Cadenas} \&C)
+\begin{CompactList}\small\item\em Sobrecarga del operator $<$$<$. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Descripción detallada}
+guardar Conjutos de cadenas 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{class_cadenas_29fe76fae8281718c0e04d56fbbdf6ac}{
+\index{Cadenas@{Cadenas}!Cadenas@{Cadenas}}
+\index{Cadenas@{Cadenas}!Cadenas@{Cadenas}}
+\subsubsection[{Cadenas}]{\setlength{\rightskip}{0pt plus 5cm}Cadenas::Cadenas ()}}
+\label{class_cadenas_29fe76fae8281718c0e04d56fbbdf6ac}
+
+
+Constructor. 
+
+\hypertarget{class_cadenas_909303b112dd23c0469003fba49d65e2}{
+\index{Cadenas@{Cadenas}!Cadenas@{Cadenas}}
+\index{Cadenas@{Cadenas}!Cadenas@{Cadenas}}
+\subsubsection[{Cadenas}]{\setlength{\rightskip}{0pt plus 5cm}Cadenas::Cadenas (int {\em n})}}
+\label{class_cadenas_909303b112dd23c0469003fba49d65e2}
+
+
+Constructor con parametros. 
+
+\hypertarget{class_cadenas_93aec818276ea7a5c0edead83b40c244}{
+\index{Cadenas@{Cadenas}!Cadenas@{Cadenas}}
+\index{Cadenas@{Cadenas}!Cadenas@{Cadenas}}
+\subsubsection[{Cadenas}]{\setlength{\rightskip}{0pt plus 5cm}Cadenas::Cadenas (const {\bf Cadenas} \& {\em C})}}
+\label{class_cadenas_93aec818276ea7a5c0edead83b40c244}
+
+
+Constructor de copia. 
+
+\hypertarget{class_cadenas_58595cf21afd1f9d11544dcf962ebccc}{
+\index{Cadenas@{Cadenas}!$\sim$Cadenas@{$\sim$Cadenas}}
+\index{$\sim$Cadenas@{$\sim$Cadenas}!Cadenas@{Cadenas}}
+\subsubsection[{$\sim$Cadenas}]{\setlength{\rightskip}{0pt plus 5cm}Cadenas::$\sim$Cadenas ()}}
+\label{class_cadenas_58595cf21afd1f9d11544dcf962ebccc}
+
+
+Destructor. 
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{class_cadenas_f0a2b9594b2e528f02a3d164740b3250}{
+\index{Cadenas@{Cadenas}!AddCadena@{AddCadena}}
+\index{AddCadena@{AddCadena}!Cadenas@{Cadenas}}
+\subsubsection[{AddCadena}]{\setlength{\rightskip}{0pt plus 5cm}void Cadenas::AddCadena (const char $\ast$ {\em cad})}}
+\label{class_cadenas_f0a2b9594b2e528f02a3d164740b3250}
+
+
+Añade una cadena a una \hyperlink{class_cadenas}{Cadenas} ya construida. 
+
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em cad}]Cadena que se va a añadir \end{description}
+\end{Desc}
+\hypertarget{class_cadenas_2e84c2888f23b09add40633fbb3469e5}{
+\index{Cadenas@{Cadenas}!GetCadena@{GetCadena}}
+\index{GetCadena@{GetCadena}!Cadenas@{Cadenas}}
+\subsubsection[{GetCadena}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Cadenas::GetCadena (int {\em i})}}
+\label{class_cadenas_2e84c2888f23b09add40633fbb3469e5}
+
+
+Devuelve la cadena de la posicion i. 
+
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em i}]posicion a la que queremos acceder \end{description}
+\end{Desc}
+\hypertarget{class_cadenas_0d370148819ec089adf75645d181671c}{
+\index{Cadenas@{Cadenas}!Getocupadas@{Getocupadas}}
+\index{Getocupadas@{Getocupadas}!Cadenas@{Cadenas}}
+\subsubsection[{Getocupadas}]{\setlength{\rightskip}{0pt plus 5cm}int Cadenas::Getocupadas ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_cadenas_0d370148819ec089adf75645d181671c}
+
+
+Devuelve el numero de palabras ocupadas. 
+
+\hypertarget{class_cadenas_4b56f36de7ebc136bcab0d5e988e46ee}{
+\index{Cadenas@{Cadenas}!GetPal@{GetPal}}
+\index{GetPal@{GetPal}!Cadenas@{Cadenas}}
+\subsubsection[{GetPal}]{\setlength{\rightskip}{0pt plus 5cm}int Cadenas::GetPal ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_cadenas_4b56f36de7ebc136bcab0d5e988e46ee}
+
+
+Devuelve el numero de palabras. 
+
+\hypertarget{class_cadenas_bb1fcc2b356de5fc9bb8d15c7162741c}{
+\index{Cadenas@{Cadenas}!operator=@{operator=}}
+\index{operator=@{operator=}!Cadenas@{Cadenas}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cadenas} \& Cadenas::operator= (const {\bf Cadenas} \& {\em C})}}
+\label{class_cadenas_bb1fcc2b356de5fc9bb8d15c7162741c}
+
+
+Sobrecarga del operator =. 
+
+\hypertarget{class_cadenas_5d74cf072d9fbdbfe35d1b137f9fec23}{
+\index{Cadenas@{Cadenas}!SetPal@{SetPal}}
+\index{SetPal@{SetPal}!Cadenas@{Cadenas}}
+\subsubsection[{SetPal}]{\setlength{\rightskip}{0pt plus 5cm}void Cadenas::SetPal (int {\em p})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_cadenas_5d74cf072d9fbdbfe35d1b137f9fec23}
+
+
+Pone el numero de palabras a p. 
+
+\begin{Desc}
+\item[Parámetros:]
+\begin{description}
+\item[{\em p}]el int que queremos que tenga palabras \end{description}
+\end{Desc}
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\hypertarget{class_cadenas_fb9ae08a4a831b348a5577c76e0b4a98}{
+\index{Cadenas@{Cadenas}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Cadenas@{Cadenas}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (ostream \& {\em os}, \/  {\bf Cadenas} \& {\em C})\hspace{0.3cm}{\tt  \mbox{[}friend\mbox{]}}}}
+\label{class_cadenas_fb9ae08a4a831b348a5577c76e0b4a98}
+
+
+Sobrecarga del operator $<$$<$. 
+
+\hypertarget{class_cadenas_e0eb1eebcfce000da1a5084b76a8d11a}{
+\index{Cadenas@{Cadenas}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Cadenas@{Cadenas}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (istream \& {\em is}, \/  {\bf Cadenas} \& {\em C})\hspace{0.3cm}{\tt  \mbox{[}friend\mbox{]}}}}
+\label{class_cadenas_e0eb1eebcfce000da1a5084b76a8d11a}
+
+
+Sobrecarga del operator $>$$>$. 
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros:\begin{CompactItemize}
+\item 
+/mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/include/\hyperlink{cadena_8h}{cadena.h}\item 
+/mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/src/\hyperlink{cadena_8cpp}{cadena.cpp}\end{CompactItemize}

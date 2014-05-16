@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Quien es quien: Fichero Fuente /mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/include/cmarco.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+    </ul>
+  </div>
+<h1>/mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/include/cmarco.h</h1><a href="cmarco_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//cmarco.h</span>
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="preprocessor">#ifndef _cmarco_h_</span>
+<a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define _cmarco_h_</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;graficos.h&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;<a class="code" href="utilidades_8h.html">utilidades.h</a>&gt;</span>
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 <span class="keyword">using namespace </span>graficos;
+<a name="l00010"></a>00010 <span class="keyword">using namespace </span>std;
+<a name="l00011"></a>00011 
+<a name="l00012"></a><a class="code" href="struct_color.html">00012</a> <span class="keyword">struct </span><a class="code" href="struct_color.html">Color</a>{
+<a name="l00013"></a><a class="code" href="struct_color.html#b002893979bedaf789d3780f1cfd4e9d">00013</a>         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct_color.html#b002893979bedaf789d3780f1cfd4e9d">r</a>, <a class="code" href="struct_color.html#d4ac573902e38d4232920836870f472f">g</a>, <a class="code" href="struct_color.html#9c8ba12e91354ffe64ca906d5e77d060">b</a>;
+<a name="l00014"></a>00014 };
+<a name="l00018"></a>00018 istream &amp; <a class="code" href="cmarco_8h.html#fca92e28db588947d14fedafbb71fba4" title="Sobrecarga del operador &amp;gt;&amp;gt;.">operator&gt;&gt;</a>(istream &amp;is, <a class="code" href="struct_color.html">Color</a> &amp;C);
+<a name="l00019"></a>00019 ostream &amp; <a class="code" href="cmarco_8h.html#32b4ac254f9f8719473bab2186f566f9">operator&lt;&lt;</a>(ostream &amp;os, <a class="code" href="struct_color.html">Color</a> &amp;C);
+<a name="l00020"></a><a class="code" href="class_marco.html">00020</a> <span class="keyword">class </span><a class="code" href="class_marco.html">Marco</a>{
+<a name="l00021"></a>00021         <span class="keyword">private</span>:
+<a name="l00022"></a>00022                 <span class="keywordtype">int</span> x, y;
+<a name="l00023"></a>00023                 <span class="keywordtype">int</span> ancho, alto;
+<a name="l00024"></a>00024                 <a class="code" href="struct_color.html">Color</a> fondo;
+<a name="l00025"></a>00025                 <span class="keywordtype">int</span> ancho_m, alto_m;
+<a name="l00026"></a>00026                 <a class="code" href="struct_color.html">Color</a> marco;
+<a name="l00027"></a>00027         <span class="keyword">public</span>:
+<a name="l00031"></a>00031                 <span class="keyword">friend</span> istream &amp; <a class="code" href="class_marco.html#fab375685ea04cd0217fab909c6dedfb" title="Sobrecarga del operador &amp;gt;&amp;gt;.">operator&gt;&gt;</a>(istream &amp;is, <a class="code" href="class_marco.html">Marco</a> &amp;M);
+<a name="l00035"></a>00035                 <span class="keyword">friend</span> ostream &amp; <a class="code" href="class_marco.html#b75f27bde4e8a09c753f27a59aaf2da0" title="Sobrecarga del operador &amp;lt;&amp;lt;.">operator&lt;&lt;</a>(ostream &amp;os, <a class="code" href="class_marco.html">Marco</a> &amp;M);
+<a name="l00039"></a><a class="code" href="class_marco.html#2dca8a6f891be78f7a54798a3baa2665">00039</a>                 <span class="keywordtype">int</span> <a class="code" href="class_marco.html#2dca8a6f891be78f7a54798a3baa2665" title="Devuelve el valor de x.">Getx</a>(){<span class="keywordflow">return</span> x;}
+<a name="l00043"></a><a class="code" href="class_marco.html#075db8ed5a143de9ff1d82c75a79c55a">00043</a>                 <span class="keywordtype">int</span> <a class="code" href="class_marco.html#075db8ed5a143de9ff1d82c75a79c55a" title="Devuelve el valor de y.">Gety</a>(){<span class="keywordflow">return</span> y;}
+<a name="l00047"></a><a class="code" href="class_marco.html#f13fbd8bc2ea4555581c1c7739519184">00047</a>                 <span class="keywordtype">int</span> <a class="code" href="class_marco.html#f13fbd8bc2ea4555581c1c7739519184" title="Devuelve el valor de alto.">Getalto</a>(){<span class="keywordflow">return</span> alto;}
+<a name="l00051"></a><a class="code" href="class_marco.html#ba1d30d14a08d67e48bb99c894fc3e78">00051</a>                 <span class="keywordtype">int</span> <a class="code" href="class_marco.html#ba1d30d14a08d67e48bb99c894fc3e78" title="Devuelve el valor de ancho.">Getancho</a>(){<span class="keywordflow">return</span> ancho;}
+<a name="l00055"></a><a class="code" href="class_marco.html#b455df2241cf007082274fb98afdb40b">00055</a>                 <span class="keywordtype">int</span> <a class="code" href="class_marco.html#b455df2241cf007082274fb98afdb40b" title="Devuelve el valor de alto_m.">Getalto_m</a>(){<span class="keywordflow">return</span> alto_m;}
+<a name="l00059"></a><a class="code" href="class_marco.html#9a77bdba78c4e8551be782eb98fcb3ec">00059</a>                 <span class="keywordtype">int</span> <a class="code" href="class_marco.html#9a77bdba78c4e8551be782eb98fcb3ec" title="Devuelve el valor de ancho_m.">Getancho_m</a>(){<span class="keywordflow">return</span> ancho_m;}
+<a name="l00063"></a><a class="code" href="class_marco.html#b4d013f6b33c4c1ab7f8f91abd70a200">00063</a>                 <a class="code" href="struct_color.html">Color</a> <a class="code" href="class_marco.html#b4d013f6b33c4c1ab7f8f91abd70a200" title="Devuelve la estructura color fondo.">Getfondo</a>(){<span class="keywordflow">return</span> fondo;}
+<a name="l00067"></a><a class="code" href="class_marco.html#2a8add5daf49790fdec1a6cc0013725f">00067</a>                 <a class="code" href="struct_color.html">Color</a> <a class="code" href="class_marco.html#2a8add5daf49790fdec1a6cc0013725f" title="Devuelve la estructura color marco.">Getmarco</a>(){<span class="keywordflow">return</span> marco;}
+<a name="l00071"></a>00071                 <span class="keywordtype">void</span> <a class="code" href="class_marco.html#c22cd3f463bd42ee1f0ff005f1780251" title="Crea graficamente el marco dado por los elementos anteriores.">Pinta</a>();
+<a name="l00072"></a>00072 };
+<a name="l00073"></a>00073 <span class="preprocessor">#endif</span>
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Generado el Tue Sep 1 19:24:44 2009 para Quien es quien por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

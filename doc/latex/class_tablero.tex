@@ -1,0 +1,120 @@
+\hypertarget{class_tablero}{
+\section{Referencia de la Clase Tablero}
+\label{class_tablero}\index{Tablero@{Tablero}}
+}
+{\tt \#include $<$tablero.h$>$}
+
+\subsection*{Métodos públicos}
+\begin{CompactItemize}
+\item 
+\hyperlink{class_tablero_b4912f28f1db392e1dd44ddc98bd4f59}{Tablero} ()
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+\hyperlink{class_tablero_7d4a64967ce0bbe2cce49ec846834c84}{$\sim$Tablero} ()
+\begin{CompactList}\small\item\em Destructor. \item\end{CompactList}\item 
+\hyperlink{class_tablero_034b3882eed22ce2d2da3787f86291af}{Tablero} (int cols, int fils, \hyperlink{class_c_personajes}{CPersonajes} \&CP)
+\begin{CompactList}\small\item\em Constructor por parametros. \item\end{CompactList}\item 
+int \hyperlink{class_tablero_b1fc381f5d873e528c1c63f97e6e3ba9}{Filas} ()
+\begin{CompactList}\small\item\em Devuelve en numero de filas. \item\end{CompactList}\item 
+int \hyperlink{class_tablero_54df6b87ccaebbd19ce4447e25465076}{Columnas} ()
+\begin{CompactList}\small\item\em Devuelve el numero de columnas. \item\end{CompactList}\item 
+\hyperlink{class_personaje}{Personaje} \hyperlink{class_tablero_ac371cb24f7f9622eeadaa89769ec727}{AccedePersonaje} (int i, int j)
+\begin{CompactList}\small\item\em Devuelve el personaje i , j. \item\end{CompactList}\item 
+void \hyperlink{class_tablero_0e4792c5222238268314606d1ef09ef2}{Tacha} (int i, int j)
+\begin{CompactList}\small\item\em Pone a false el booleano del personaje i, j. \item\end{CompactList}\item 
+void \hyperlink{class_tablero_8a6fc4d7e1a9603f4087f7e83bce75e7}{DesTacha} (int i, int j)
+\begin{CompactList}\small\item\em Pone a true el booleano del personaje i, j. \item\end{CompactList}\item 
+bool \hyperlink{class_tablero_03cfb33860dba233ce0ee015910773fc}{ComprGanador} (int \&x, int \&y)
+\begin{CompactList}\small\item\em Comprueba si queda solo 1 personaje por tachar. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{class_tablero_b4912f28f1db392e1dd44ddc98bd4f59}{
+\index{Tablero@{Tablero}!Tablero@{Tablero}}
+\index{Tablero@{Tablero}!Tablero@{Tablero}}
+\subsubsection[{Tablero}]{\setlength{\rightskip}{0pt plus 5cm}Tablero::Tablero ()}}
+\label{class_tablero_b4912f28f1db392e1dd44ddc98bd4f59}
+
+
+Constructor. 
+
+\hypertarget{class_tablero_7d4a64967ce0bbe2cce49ec846834c84}{
+\index{Tablero@{Tablero}!$\sim$Tablero@{$\sim$Tablero}}
+\index{$\sim$Tablero@{$\sim$Tablero}!Tablero@{Tablero}}
+\subsubsection[{$\sim$Tablero}]{\setlength{\rightskip}{0pt plus 5cm}Tablero::$\sim$Tablero ()}}
+\label{class_tablero_7d4a64967ce0bbe2cce49ec846834c84}
+
+
+Destructor. 
+
+\hypertarget{class_tablero_034b3882eed22ce2d2da3787f86291af}{
+\index{Tablero@{Tablero}!Tablero@{Tablero}}
+\index{Tablero@{Tablero}!Tablero@{Tablero}}
+\subsubsection[{Tablero}]{\setlength{\rightskip}{0pt plus 5cm}Tablero::Tablero (int {\em cols}, \/  int {\em fils}, \/  {\bf CPersonajes} \& {\em CP})}}
+\label{class_tablero_034b3882eed22ce2d2da3787f86291af}
+
+
+Constructor por parametros. 
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{class_tablero_ac371cb24f7f9622eeadaa89769ec727}{
+\index{Tablero@{Tablero}!AccedePersonaje@{AccedePersonaje}}
+\index{AccedePersonaje@{AccedePersonaje}!Tablero@{Tablero}}
+\subsubsection[{AccedePersonaje}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Personaje} Tablero::AccedePersonaje (int {\em i}, \/  int {\em j})}}
+\label{class_tablero_ac371cb24f7f9622eeadaa89769ec727}
+
+
+Devuelve el personaje i , j. 
+
+\hypertarget{class_tablero_54df6b87ccaebbd19ce4447e25465076}{
+\index{Tablero@{Tablero}!Columnas@{Columnas}}
+\index{Columnas@{Columnas}!Tablero@{Tablero}}
+\subsubsection[{Columnas}]{\setlength{\rightskip}{0pt plus 5cm}int Tablero::Columnas ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_tablero_54df6b87ccaebbd19ce4447e25465076}
+
+
+Devuelve el numero de columnas. 
+
+\hypertarget{class_tablero_03cfb33860dba233ce0ee015910773fc}{
+\index{Tablero@{Tablero}!ComprGanador@{ComprGanador}}
+\index{ComprGanador@{ComprGanador}!Tablero@{Tablero}}
+\subsubsection[{ComprGanador}]{\setlength{\rightskip}{0pt plus 5cm}bool Tablero::ComprGanador (int \& {\em x}, \/  int \& {\em y})}}
+\label{class_tablero_03cfb33860dba233ce0ee015910773fc}
+
+
+Comprueba si queda solo 1 personaje por tachar. 
+
+\hypertarget{class_tablero_8a6fc4d7e1a9603f4087f7e83bce75e7}{
+\index{Tablero@{Tablero}!DesTacha@{DesTacha}}
+\index{DesTacha@{DesTacha}!Tablero@{Tablero}}
+\subsubsection[{DesTacha}]{\setlength{\rightskip}{0pt plus 5cm}void Tablero::DesTacha (int {\em i}, \/  int {\em j})}}
+\label{class_tablero_8a6fc4d7e1a9603f4087f7e83bce75e7}
+
+
+Pone a true el booleano del personaje i, j. 
+
+\hypertarget{class_tablero_b1fc381f5d873e528c1c63f97e6e3ba9}{
+\index{Tablero@{Tablero}!Filas@{Filas}}
+\index{Filas@{Filas}!Tablero@{Tablero}}
+\subsubsection[{Filas}]{\setlength{\rightskip}{0pt plus 5cm}int Tablero::Filas ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{class_tablero_b1fc381f5d873e528c1c63f97e6e3ba9}
+
+
+Devuelve en numero de filas. 
+
+\hypertarget{class_tablero_0e4792c5222238268314606d1ef09ef2}{
+\index{Tablero@{Tablero}!Tacha@{Tacha}}
+\index{Tacha@{Tacha}!Tablero@{Tablero}}
+\subsubsection[{Tacha}]{\setlength{\rightskip}{0pt plus 5cm}void Tablero::Tacha (int {\em i}, \/  int {\em j})}}
+\label{class_tablero_0e4792c5222238268314606d1ef09ef2}
+
+
+Pone a false el booleano del personaje i, j. 
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros:\begin{CompactItemize}
+\item 
+/mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/include/\hyperlink{tablero_8h}{tablero.h}\item 
+/mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/src/\hyperlink{tablero_8cpp}{tablero.cpp}\end{CompactItemize}

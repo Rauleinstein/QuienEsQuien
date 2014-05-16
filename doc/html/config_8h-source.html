@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Quien es quien: Fichero Fuente /mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/include/config.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+    </ul>
+  </div>
+<h1>/mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/include/config.h</h1><a href="config_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef _config_h_</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define _config_h_</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span><span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;<a class="code" href="cmarco_8h.html">cmarco.h</a>&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;graficos.h&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;<a class="code" href="cpersonajes_8h.html">cpersonajes.h</a>&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;<a class="code" href="preguntas_8h.html">preguntas.h</a>&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;stdio.h&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;<a class="code" href="cadena_8h.html">cadena.h</a>&gt;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &lt;<a class="code" href="config_8h.html">config.h</a>&gt;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;<a class="code" href="cmarco_8h.html">cmarco.h</a>&gt;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &lt;cstring&gt;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &lt;<a class="code" href="tablero_8h.html">tablero.h</a>&gt;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <span class="keyword">using namespace </span>graficos;
+<a name="l00016"></a>00016 <span class="keyword">using namespace </span>std;
+<a name="l00017"></a>00017 
+<a name="l00018"></a>00018 
+<a name="l00019"></a><a class="code" href="class_config.html">00019</a> <span class="keyword">class </span><a class="code" href="class_config.html">Config</a>{
+<a name="l00020"></a>00020         <span class="keyword">public</span>:
+<a name="l00022"></a><a class="code" href="class_config.html#b3dd58673f2af65f7ae5d801daf8c448">00022</a>         <span class="keywordtype">int</span> <a class="code" href="class_config.html#375dbaaec6f89886b6195655b7f798fa" title="Opciones Generales.">vent_alto</a>, <a class="code" href="class_config.html#b3dd58673f2af65f7ae5d801daf8c448">vent_ancho</a>;
+<a name="l00023"></a><a class="code" href="class_config.html#2200cb13ef26eee671b9a1c1de4bfb2f">00023</a>         <span class="keywordtype">int</span> <a class="code" href="class_config.html#2200cb13ef26eee671b9a1c1de4bfb2f">nft</a>, <a class="code" href="class_config.html#e234bd53f1f5cf692f15509f82ca1233">nct</a>;
+<a name="l00024"></a><a class="code" href="class_config.html#f79dabb44eb858869d54dad5a35e50b2">00024</a>         <span class="keywordtype">int</span> <a class="code" href="class_config.html#b1160d5fb2c2f5bb524f98b83bf47dc7">sep_alto</a>, <a class="code" href="class_config.html#f79dabb44eb858869d54dad5a35e50b2">sep_ancho</a>;
+<a name="l00026"></a><a class="code" href="class_config.html#6330c7b3a76652ae994fb700f9c5b0cd">00026</a>         <a class="code" href="class_marco.html">Marco</a> <a class="code" href="class_config.html#6330c7b3a76652ae994fb700f9c5b0cd" title="Tablero Humano.">tablero_humano</a>;
+<a name="l00027"></a><a class="code" href="class_config.html#a1351994125131a976c61e8d8554c6d6">00027</a>         <a class="code" href="struct_color.html">Color</a> <a class="code" href="class_config.html#a1351994125131a976c61e8d8554c6d6">th_tachar</a>;
+<a name="l00029"></a><a class="code" href="class_config.html#27f29ca03d9307e6622fba1bba7159c8">00029</a>         <a class="code" href="class_marco.html">Marco</a> <a class="code" href="class_config.html#27f29ca03d9307e6622fba1bba7159c8" title="Parte Preguntas.">preguntas</a>;
+<a name="l00030"></a><a class="code" href="class_config.html#7346dfc8027f9d63ca5452fbb05dbfb5">00030</a>         <span class="keywordtype">char</span> * <a class="code" href="class_config.html#7346dfc8027f9d63ca5452fbb05dbfb5">fuente</a>;
+<a name="l00031"></a><a class="code" href="class_config.html#e2a6648535112d37a98ee87e05073fc2">00031</a>         <span class="keywordtype">int</span> <a class="code" href="class_config.html#e2a6648535112d37a98ee87e05073fc2">pre_tam_fuente</a>;
+<a name="l00032"></a><a class="code" href="class_config.html#0a6e9c45700357211744f32b60ac21f9">00032</a>         <a class="code" href="struct_color.html">Color</a> <a class="code" href="class_config.html#0a6e9c45700357211744f32b60ac21f9">pre_fuente</a>;
+<a name="l00034"></a><a class="code" href="class_config.html#22f99a51ac181a6079c67e4a9074576b">00034</a>         <a class="code" href="class_marco.html">Marco</a> <a class="code" href="class_config.html#22f99a51ac181a6079c67e4a9074576b" title="Tablero Maquina.">tablero_maquina</a>;
+<a name="l00035"></a><a class="code" href="class_config.html#3c9384bbc30ffeb40fa83a79b96c45fd">00035</a>         <a class="code" href="struct_color.html">Color</a> <a class="code" href="class_config.html#3c9384bbc30ffeb40fa83a79b96c45fd">tm_tachar</a>;
+<a name="l00036"></a>00036         <span class="comment">/*Personajes Ocultos*/</span>
+<a name="l00038"></a><a class="code" href="class_config.html#37dfa4fc481f1d7096f41a6f9545d7ff">00038</a>         <a class="code" href="class_marco.html">Marco</a> <a class="code" href="class_config.html#37dfa4fc481f1d7096f41a6f9545d7ff" title="Jugador1.">jugardor1</a>;
+<a name="l00040"></a><a class="code" href="class_config.html#915ba524a7bc39f6200c868e1229c1e2">00040</a>         <a class="code" href="class_marco.html">Marco</a> <a class="code" href="class_config.html#915ba524a7bc39f6200c868e1229c1e2" title="Jugador2.">jugador2</a>;
+<a name="l00042"></a><a class="code" href="class_config.html#47db6265e31072da47a2062fda7971e1">00042</a>         <a class="code" href="class_marco.html">Marco</a> <a class="code" href="class_config.html#47db6265e31072da47a2062fda7971e1" title="Recuadro de botones.">botones</a>;
+<a name="l00044"></a><a class="code" href="class_config.html#ab38937ac969b6c7a1bb516829a4b3d7">00044</a>         <a class="code" href="class_marco.html">Marco</a> <a class="code" href="class_config.html#ab38937ac969b6c7a1bb516829a4b3d7" title="Tiempo acumulado.">tiempo</a>;
+<a name="l00046"></a><a class="code" href="class_config.html#ac6a9b8b0f11a7016886a6250444e950">00046</a>         <a class="code" href="class_marco.html">Marco</a> <a class="code" href="class_config.html#ac6a9b8b0f11a7016886a6250444e950" title="Boton STOP.">stop</a>;
+<a name="l00048"></a><a class="code" href="class_config.html#221e1619fe58f93b4aa3369b6388ae76">00048</a>         <a class="code" href="class_marco.html">Marco</a> <a class="code" href="class_config.html#221e1619fe58f93b4aa3369b6388ae76" title="Conometro.">conometro</a>;
+<a name="l00050"></a><a class="code" href="class_config.html#25cedb2b9bacdadfa4e138d93d621653">00050</a>         <a class="code" href="class_marco.html">Marco</a> <a class="code" href="class_config.html#25cedb2b9bacdadfa4e138d93d621653" title="Cuadro restaurar.">restaurar</a>;
+<a name="l00051"></a><a class="code" href="class_config.html#d522e3624b073006515daeeb2a7b6bc1">00051</a>         <a class="code" href="struct_color.html">Color</a> <a class="code" href="class_config.html#d522e3624b073006515daeeb2a7b6bc1">tiempo_pasado</a>;
+<a name="l00053"></a><a class="code" href="class_config.html#fb529bc47d1bf967f429261d57da7786">00053</a>         <span class="keywordtype">char</span> * <a class="code" href="class_config.html#fb529bc47d1bf967f429261d57da7786" title="Fuente Botones.">fuente_boton</a>;
+<a name="l00054"></a><a class="code" href="class_config.html#aa23e90f3ee9ef5b23e6381bc51aa58a">00054</a>         <span class="keywordtype">int</span> <a class="code" href="class_config.html#aa23e90f3ee9ef5b23e6381bc51aa58a">tam_bot</a>;
+<a name="l00055"></a><a class="code" href="class_config.html#10426677e6f5a372ddf4bfea5da6f3d6">00055</a>         <a class="code" href="struct_color.html">Color</a> <a class="code" href="class_config.html#10426677e6f5a372ddf4bfea5da6f3d6">fuente_c_boton</a>;
+<a name="l00057"></a><a class="code" href="class_config.html#566edeb58b797aac802596fedd9e133b">00057</a>         <a class="code" href="class_marco.html">Marco</a> <a class="code" href="class_config.html#566edeb58b797aac802596fedd9e133b" title="Terminal.">terminal</a>;
+<a name="l00058"></a><a class="code" href="class_config.html#a384377656d83174474d2a3db85b9b53">00058</a>         <span class="keywordtype">char</span> * <a class="code" href="class_config.html#a384377656d83174474d2a3db85b9b53">fuente_ter</a>;
+<a name="l00059"></a><a class="code" href="class_config.html#4ed61ba67371ab3b4e796f6c085c970d">00059</a>         <span class="keywordtype">int</span> <a class="code" href="class_config.html#4ed61ba67371ab3b4e796f6c085c970d">tam_fter</a>;
+<a name="l00060"></a><a class="code" href="class_config.html#58b22a3c2857d0bde659cdf22642b654">00060</a>         <a class="code" href="struct_color.html">Color</a> <a class="code" href="class_config.html#58b22a3c2857d0bde659cdf22642b654">fuente_c_ter</a>;
+<a name="l00061"></a><a class="code" href="class_config.html#8c8a659e2f3e0e8ea61e719a4b0138f7">00061</a>         <span class="keywordtype">int</span> <a class="code" href="class_config.html#8c8a659e2f3e0e8ea61e719a4b0138f7">lineas_ter</a>;
+<a name="l00063"></a><a class="code" href="class_config.html#1232c4b290f0ab28e04eec3b6ca702e3">00063</a>         <span class="keywordtype">char</span> * <a class="code" href="class_config.html#1232c4b290f0ab28e04eec3b6ca702e3" title="caras ocultas">car_ocult</a>;
+<a name="l00065"></a><a class="code" href="class_config.html#8f0e117c12295f853e0f39cb82bddad5">00065</a>         <span class="keywordtype">int</span> <a class="code" href="class_config.html#8f0e117c12295f853e0f39cb82bddad5" title="tiempo">tiempo_espera</a>;
+<a name="l00066"></a>00066         <span class="comment">//FUNCIONES</span>
+<a name="l00070"></a>00070 <span class="comment"></span>        <a class="code" href="class_config.html#bd0c571c116924871e30444b192b792a" title="Constructor.">Config</a>();
+<a name="l00074"></a>00074         <a class="code" href="class_config.html#543dce59b66475c5108088ee4ce1cdfc" title="Destructor.">~Config</a>();
+<a name="l00078"></a>00078         <span class="keyword">friend</span> istream &amp; <a class="code" href="class_config.html#d9d17872a79524063d3afa93725719e3" title="Sobrecarga del operador &amp;gt;&amp;gt;.">operator&gt;&gt;</a>(istream &amp;is, <a class="code" href="class_config.html">Config</a> &amp; C);
+<a name="l00082"></a>00082         <span class="keyword">friend</span> ostream &amp; <a class="code" href="class_config.html#281dd477583c5361ca8fbdd58a80ca72" title="Sobrecarga del operador &amp;lt;&amp;lt;.">operator&lt;&lt;</a>(ostream &amp;os, <a class="code" href="class_config.html">Config</a> &amp;C);
+<a name="l00086"></a><a class="code" href="class_config.html#63b35552c2db0e6bfadf386a6df6cc8b">00086</a>         <span class="keywordtype">int</span> <a class="code" href="class_config.html#63b35552c2db0e6bfadf386a6df6cc8b" title="Devuelve el valor de nft.">Filas</a>(){<span class="keywordflow">return</span> <a class="code" href="class_config.html#2200cb13ef26eee671b9a1c1de4bfb2f">nft</a>;}
+<a name="l00090"></a><a class="code" href="class_config.html#7f64981766eaccc7726295beb6e06d1a">00090</a>         <span class="keywordtype">int</span> <a class="code" href="class_config.html#7f64981766eaccc7726295beb6e06d1a" title="Devuelve el valor de nct.">Columnas</a>(){<span class="keywordflow">return</span> <a class="code" href="class_config.html#e234bd53f1f5cf692f15509f82ca1233">nct</a>;}
+<a name="l00094"></a>00094         <span class="keywordtype">void</span> <a class="code" href="class_config.html#38a07e218d50496b9b93e5bd4ab9956f" title="Dibuja graficamente toda la configuración.">PintaConfig</a>();
+<a name="l00099"></a>00099         <span class="keywordtype">void</span> <a class="code" href="class_config.html#5861894c33eea7cec9523494912a295a" title="Dibuja graficamente todas las caras que estan en el tablero.">DibujaCaras</a>(<a class="code" href="class_tablero.html">Tablero</a> &amp;T);
+<a name="l00103"></a>00103         <span class="keywordtype">void</span> <a class="code" href="class_config.html#9f697dc06ed8ea10eb674ffa747bbdab" title="Dibuja las Caras ocultas del tablero de la maquina.">DibujaCarasOcultas</a>(<span class="keywordtype">char</span> * img);
+<a name="l00107"></a>00107         <span class="keywordtype">void</span> <a class="code" href="class_config.html#a65b0dec7dbb915a147f0e1a48177cfc" title="Dibuja el Personaje del Jugador1.">PintaOcultoJ1</a>(<a class="code" href="class_personaje.html">Personaje</a> P);
+<a name="l00111"></a>00111         <span class="keywordtype">void</span> <a class="code" href="class_config.html#bef122e837338a9bcc4c2b0a95866d31" title="Descubre el Personaje oculto de la Maquina.">DescubreOcultoJ2</a>(<a class="code" href="class_personaje.html">Personaje</a> P);
+<a name="l00115"></a>00115         <span class="keywordtype">void</span> <a class="code" href="class_config.html#1d4493399b5138963924586b02daf6ad" title="Dibuja el Personaje Oculto de la Maquina.">PintaOcultoJ2</a>(<span class="keywordtype">char</span> * img);
+<a name="l00119"></a>00119         <span class="keywordtype">void</span> <a class="code" href="class_config.html#69dbcf835071f978ec360958ee54860e" title="Dibuja en el entorno grafico todas las Preguntas.">PintaPreguntas</a>(<a class="code" href="class_preguntas.html">Preguntas</a> &amp;P);
+<a name="l00123"></a>00123         <span class="keywordtype">int</span> <a class="code" href="class_config.html#6098dc6aed67f0e0df613d56cceeddc7" title="Recoge por teclado todos los datos.">Recogedatos</a>(<a class="code" href="class_preguntas.html">Preguntas</a> &amp;P);
+<a name="l00129"></a>00129         <span class="keywordtype">void</span> <a class="code" href="class_config.html#fc16e01f77244e2ea4786c814cb4fa99" title="Escribe la cadena cad en el terminal.">PintaTerminal</a>(<span class="keywordtype">char</span> * cad, <a class="code" href="class_cadenas.html">Cadenas</a> &amp;C);
+<a name="l00137"></a>00137         <span class="keywordtype">int</span> <a class="code" href="class_config.html#d2717716bb3e5cbca52b4fb906cfc2b0" title="Pasando unas coordenadas de raton devuelve unas coordenadas de matriz.">EncuentraCoordenadas</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> &amp;i, <span class="keywordtype">int</span> &amp;j);
+<a name="l00141"></a>00141         <span class="keywordtype">void</span> <a class="code" href="class_config.html#dc8163da35c14b46f65c79bdcfea4d6e" title="Tacha personaje i, j del tablero humano.">TacharPersonaje</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j);
+<a name="l00145"></a>00145         <span class="keywordtype">void</span> <a class="code" href="class_config.html#b0ece1c4e60dc3fc432b70b710ec7c33" title="Tacha personaje i, j del tablero maquina.">TacharPersonajeM</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j);
+<a name="l00150"></a>00150         <span class="keywordtype">void</span> <a class="code" href="class_config.html#584298fc8c9442a2be186d3a39776859" title="Pinta el Cronometro segun el tiempo dado.">PintaCrono</a>(<span class="keywordtype">long</span> <span class="keywordtype">int</span> <a class="code" href="class_config.html#ab38937ac969b6c7a1bb516829a4b3d7" title="Tiempo acumulado.">tiempo</a>);
+<a name="l00154"></a><a class="code" href="class_config.html#d6ab8b5ecdb0602a9d3b6b70ed09f766">00154</a>         <span class="keywordtype">int</span> <a class="code" href="class_config.html#d6ab8b5ecdb0602a9d3b6b70ed09f766" title="Devuelve el tiempo_espera.">TiempoEspera</a>(){<span class="keywordflow">return</span> <a class="code" href="class_config.html#8f0e117c12295f853e0f39cb82bddad5" title="tiempo">tiempo_espera</a>;}
+<a name="l00158"></a>00158         <span class="keywordtype">void</span> <a class="code" href="class_config.html#5502bfd9175981e9a5c8543e618a2ace" title="Repinta el cronometro.">ReiniciaCrono</a>();
+<a name="l00163"></a>00163         <span class="keywordtype">void</span> <a class="code" href="class_config.html#4f1b69ffddd53323755b960ceaa07281" title="Pinta la Puntuacion que se le pasa por parametros.">PintaPuntuacion</a>(<span class="keywordtype">int</span> puntuacion);
+<a name="l00167"></a>00167         <span class="keywordtype">void</span> <a class="code" href="class_config.html#41b3ad0b583abb4dcd8a0119d5bdb166" title="Limpia la puntuacion para evitar sobreescrituras.">LimpiaPuntuacion</a>();
+<a name="l00171"></a><a class="code" href="class_config.html#80c099b02be9635d3245daf2e05bb6e6">00171</a>         <span class="keywordtype">int</span> <a class="code" href="class_config.html#80c099b02be9635d3245daf2e05bb6e6" title="Devuelve el ancho de la ventana.">Ventancho</a>(){<span class="keywordflow">return</span> <a class="code" href="class_config.html#b3dd58673f2af65f7ae5d801daf8c448">vent_ancho</a>;}
+<a name="l00175"></a><a class="code" href="class_config.html#db1372196f96192c9c8a77ff8c3147c7">00175</a>         <span class="keywordtype">int</span> <a class="code" href="class_config.html#db1372196f96192c9c8a77ff8c3147c7" title="Devuelve el alto de la ventana.">Ventalto</a>(){<span class="keywordflow">return</span> <a class="code" href="class_config.html#375dbaaec6f89886b6195655b7f798fa" title="Opciones Generales.">vent_alto</a>;}
+<a name="l00176"></a>00176 };
+<a name="l00177"></a>00177 
+<a name="l00178"></a>00178 <span class="preprocessor">#endif</span>
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Generado el Tue Sep 1 19:24:44 2009 para Quien es quien por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

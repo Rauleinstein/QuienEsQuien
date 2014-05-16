@@ -1,0 +1,105 @@
+\documentclass[a4paper]{book}
+\usepackage{a4wide}
+\usepackage{makeidx}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{times}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{doxygen}
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\begin{document}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large Quien es quien \\[1ex]\large 1.0 }\\
+\vspace*{1cm}
+{\large Generado por Doxygen 1.5.8}\\
+\vspace*{0.5cm}
+{\small Tue Sep 1 19:24:44 2009}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\chapter{Índice de clases}
+\input{annotated}
+\chapter{Indice de archivos}
+\input{files}
+\chapter{Documentación de las clases}
+\input{class_cadenas}
+\include{struct_color}
+\include{class_config}
+\include{class_c_personajes}
+\include{class_c_rasgos}
+\include{class_marco}
+\include{class_personaje}
+\include{class_preguntas}
+\include{class_rasgo}
+\include{class_rasgoc}
+\include{class_sopa}
+\include{class_sopaamp}
+\include{class_tablero}
+\include{class_todosrasgos}
+\chapter{Documentación de archivos}
+\input{cadena_8h}
+\include{ccrasgos_8h}
+\include{cmarco_8h}
+\include{config_8h}
+\include{cpersonajes_8h}
+\include{crasgo_8h}
+\include{csopa_8h}
+\include{csopaamp_8h}
+\include{personaje_8h}
+\include{preguntas_8h}
+\include{rasgocomp_8h}
+\include{tablero_8h}
+\include{terminal_8h}
+\include{todosrasgos_8h}
+\include{utilidades_8h}
+\include{cadena_8cpp}
+\include{ccrasgos_8cpp}
+\include{cmarco_8cpp}
+\include{config_8cpp}
+\include{cpersonajes_8cpp}
+\include{crasgo_8cpp}
+\include{csopa_8cpp}
+\include{csopaamp_8cpp}
+\include{lecturas_8cpp}
+\include{main_8cpp}
+\include{personaje_8cpp}
+\include{preguntas_8cpp}
+\include{preguntas2_8cpp}
+\include{preguntasjulio_8cpp}
+\include{rasgocomp_8cpp}
+\include{tablero_8cpp}
+\include{terminal_8cpp}
+\include{todosrasgos_8cpp}
+\include{utilidades_8cpp}
+\printindex
+\end{document}

@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Quien es quien: Fichero Fuente /mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/include/cadena.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+    </ul>
+  </div>
+<h1>/mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/include/cadena.h</h1><a href="cadena_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00009"></a>00009 <span class="preprocessor">#ifndef _cadena_h_</span>
+<a name="l00010"></a>00010 <span class="preprocessor"></span><span class="preprocessor">#define _cadena_h_</span>
+<a name="l00011"></a>00011 <span class="preprocessor"></span><span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &lt;cstring&gt;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &lt;<a class="code" href="utilidades_8h.html">utilidades.h</a>&gt;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <span class="keyword">using namespace </span>std;
+<a name="l00020"></a><a class="code" href="class_cadenas.html">00020</a> <span class="keyword">class </span><a class="code" href="class_cadenas.html">Cadenas</a> {
+<a name="l00021"></a>00021         <span class="keywordtype">char</span> **cad;
+<a name="l00022"></a>00022         <span class="keywordtype">int</span> palabras, ocupadas;
+<a name="l00023"></a>00023         <span class="keyword">public</span>:
+<a name="l00027"></a>00027                 <a class="code" href="class_cadenas.html#29fe76fae8281718c0e04d56fbbdf6ac" title="Constructor.">Cadenas</a>();
+<a name="l00031"></a>00031                 <a class="code" href="class_cadenas.html#29fe76fae8281718c0e04d56fbbdf6ac" title="Constructor.">Cadenas</a>(<span class="keywordtype">int</span> n);
+<a name="l00035"></a>00035                 <a class="code" href="class_cadenas.html#29fe76fae8281718c0e04d56fbbdf6ac" title="Constructor.">Cadenas</a>(<span class="keyword">const</span> <a class="code" href="class_cadenas.html">Cadenas</a>&amp;C);
+<a name="l00039"></a>00039                 <a class="code" href="class_cadenas.html#58595cf21afd1f9d11544dcf962ebccc" title="Destructor.">~Cadenas</a>();
+<a name="l00044"></a>00044                 <span class="keywordtype">void</span> <a class="code" href="class_cadenas.html#f0a2b9594b2e528f02a3d164740b3250" title="Añade una cadena a una Cadenas ya construida.">AddCadena</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * cad);
+<a name="l00049"></a><a class="code" href="class_cadenas.html#5d74cf072d9fbdbfe35d1b137f9fec23">00049</a>                 <span class="keywordtype">void</span> <a class="code" href="class_cadenas.html#5d74cf072d9fbdbfe35d1b137f9fec23" title="Pone el numero de palabras a p.">SetPal</a>(<span class="keywordtype">int</span> p){palabras = p;}
+<a name="l00053"></a><a class="code" href="class_cadenas.html#4b56f36de7ebc136bcab0d5e988e46ee">00053</a>                 <span class="keywordtype">int</span> <a class="code" href="class_cadenas.html#4b56f36de7ebc136bcab0d5e988e46ee" title="Devuelve el numero de palabras.">GetPal</a>(){<span class="keywordflow">return</span> palabras;}
+<a name="l00057"></a><a class="code" href="class_cadenas.html#0d370148819ec089adf75645d181671c">00057</a>                 <span class="keywordtype">int</span> <a class="code" href="class_cadenas.html#0d370148819ec089adf75645d181671c" title="Devuelve el numero de palabras ocupadas.">Getocupadas</a>(){<span class="keywordflow">return</span> ocupadas;}
+<a name="l00062"></a>00062                 <span class="keywordtype">char</span> * <a class="code" href="class_cadenas.html#2e84c2888f23b09add40633fbb3469e5" title="Devuelve la cadena de la posicion i.">GetCadena</a>(<span class="keywordtype">int</span> i);
+<a name="l00066"></a>00066                 <span class="keyword">friend</span> istream &amp;<a class="code" href="class_cadenas.html#e0eb1eebcfce000da1a5084b76a8d11a" title="Sobrecarga del operator &amp;gt;&amp;gt;.">operator&gt;&gt;</a>(istream &amp;is, <a class="code" href="class_cadenas.html">Cadenas</a> &amp;C);
+<a name="l00070"></a>00070                 <span class="keyword">friend</span> ostream &amp;<a class="code" href="class_cadenas.html#fb9ae08a4a831b348a5577c76e0b4a98" title="Sobrecarga del operator &amp;lt;&amp;lt;.">operator&lt;&lt;</a>(ostream &amp;os, <a class="code" href="class_cadenas.html">Cadenas</a> &amp;C);
+<a name="l00074"></a>00074                 <a class="code" href="class_cadenas.html">Cadenas</a>&amp; <a class="code" href="class_cadenas.html#bb1fcc2b356de5fc9bb8d15c7162741c" title="Sobrecarga del operator =.">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_cadenas.html">Cadenas</a> &amp;C);
+<a name="l00075"></a>00075 };
+<a name="l00076"></a>00076 
+<a name="l00077"></a>00077 <span class="preprocessor">#endif </span>
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Generado el Tue Sep 1 19:24:44 2009 para Quien es quien por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

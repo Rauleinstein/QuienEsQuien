@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Quien es quien: Fichero Fuente /mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/include/cpersonajes.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+    </ul>
+  </div>
+<h1>/mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/include/cpersonajes.h</h1><a href="cpersonajes_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef _cpersonajes_h_</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define _cpersonajes_h_</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span><span class="preprocessor">#include &lt;<a class="code" href="personaje_8h.html">personaje.h</a>&gt;</span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;cstring&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;<a class="code" href="utilidades_8h.html">utilidades.h</a>&gt;</span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 <span class="keyword">using namespace </span>std;
+<a name="l00009"></a>00009 
+<a name="l00010"></a><a class="code" href="class_c_personajes.html">00010</a> <span class="keyword">class </span><a class="code" href="class_c_personajes.html">CPersonajes</a>{
+<a name="l00011"></a>00011         <span class="keywordtype">int</span> n_personajes;
+<a name="l00012"></a>00012         <a class="code" href="class_personaje.html">Personaje</a> * P;
+<a name="l00013"></a>00013         <span class="keyword">public</span>:
+<a name="l00017"></a>00017                 <a class="code" href="class_c_personajes.html#fc9f1e237eb306984f85393ff4e65842" title="Constructor.">CPersonajes</a>();
+<a name="l00021"></a>00021                 <a class="code" href="class_c_personajes.html#3bcd959bc1702107853482729687b1e0" title="Destructor.">~CPersonajes</a>();
+<a name="l00025"></a>00025                 <a class="code" href="class_c_personajes.html#fc9f1e237eb306984f85393ff4e65842" title="Constructor.">CPersonajes</a>(<span class="keyword">const</span> <a class="code" href="class_c_personajes.html">CPersonajes</a> &amp;CP);
+<a name="l00029"></a>00029                 <span class="keyword">friend</span> istream &amp;<a class="code" href="class_c_personajes.html#4456215e5677663ee76f95b40e2ae502" title="Sobrecarga del operador &amp;gt;&amp;gt;.">operator&gt;&gt;</a>(istream &amp;is, <a class="code" href="class_c_personajes.html">CPersonajes</a> &amp;CP);
+<a name="l00033"></a>00033                 <span class="keyword">friend</span> ostream &amp;<a class="code" href="class_c_personajes.html#bdc717e962d38d0b04d8fc86b0fd0afc" title="Sobrecarga del operador &amp;lt;&amp;lt;.">operator&lt;&lt;</a>(ostream &amp;os, <a class="code" href="class_c_personajes.html">CPersonajes</a> &amp;CP);
+<a name="l00037"></a>00037                 <a class="code" href="class_personaje.html">Personaje</a> <a class="code" href="class_c_personajes.html#7aa7d31aa91c44660857df971242f9f3" title="Devuelve el personaje n.">AccedePersonaje</a>(<span class="keywordtype">int</span> n);
+<a name="l00041"></a>00041                 <a class="code" href="class_c_personajes.html">CPersonajes</a> &amp;<a class="code" href="class_c_personajes.html#43e8d3445e65eb0ab0d4b842a7e73a3a" title="Elimina el personaje n.">EliminaPersonaje</a>(<span class="keywordtype">int</span> n);
+<a name="l00045"></a>00045                 <a class="code" href="class_c_personajes.html">CPersonajes</a> &amp; <a class="code" href="class_c_personajes.html#76356e18c65e246be804711ad481e2e4" title="Sobrecarga del operador =.">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_c_personajes.html">CPersonajes</a> &amp; CP);
+<a name="l00049"></a><a class="code" href="class_c_personajes.html#90a3e2265d8b8800ccb322bdb8927566">00049</a>                 <span class="keywordtype">int</span> <a class="code" href="class_c_personajes.html#90a3e2265d8b8800ccb322bdb8927566" title="Devuelve el numero de personajes.">Numeroper</a>(){<span class="keywordflow">return</span> n_personajes;}
+<a name="l00050"></a>00050 };
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052 <span class="preprocessor">#endif</span>
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Generado el Tue Sep 1 19:24:44 2009 para Quien es quien por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

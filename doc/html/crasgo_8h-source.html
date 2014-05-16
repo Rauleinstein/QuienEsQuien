@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Quien es quien: Fichero Fuente /mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/include/crasgo.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generado por Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="main.html"><span>Página&nbsp;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&nbsp;de&nbsp;los&nbsp;ficheros</span></a></li>
+    </ul>
+  </div>
+<h1>/mnt/windowssdfs/Raul/MP2/Quien es Quien/quienesquien/include/crasgo.h</h1><a href="crasgo_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef _crasgo_h_</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define _crasgo_h_</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span><span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;cstring&gt;</span>
+<a name="l00005"></a>00005 
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 <span class="keyword">using namespace </span>std;
+<a name="l00008"></a>00008 
+<a name="l00009"></a><a class="code" href="class_rasgo.html">00009</a> <span class="keyword">class </span><a class="code" href="class_rasgo.html">Rasgo</a>{
+<a name="l00010"></a>00010         <span class="keywordtype">char</span> * tipo;
+<a name="l00011"></a>00011         <span class="keywordtype">char</span> * valor;
+<a name="l00012"></a>00012         <span class="keyword">public</span>:
+<a name="l00016"></a>00016                 <a class="code" href="class_rasgo.html#4113ea8cb35ce2c98ff24ee733257438" title="Constructor.">Rasgo</a>();
+<a name="l00020"></a>00020                 <a class="code" href="class_rasgo.html#4113ea8cb35ce2c98ff24ee733257438" title="Constructor.">Rasgo</a>(<span class="keywordtype">char</span> *tipo, <span class="keywordtype">char</span> *valor);
+<a name="l00024"></a>00024                 <a class="code" href="class_rasgo.html#2371a4d82578769c926682d8a6b44414" title="Destructor.">~Rasgo</a>();
+<a name="l00028"></a>00028                 <a class="code" href="class_rasgo.html">Rasgo</a> &amp; <a class="code" href="class_rasgo.html#915b93eab9642f2fe9dfef02561f04d8" title="Sobrecarga del operador =.">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_rasgo.html">Rasgo</a> &amp;R);
+<a name="l00032"></a>00032                 <span class="keywordtype">char</span> * <a class="code" href="class_rasgo.html#208a94566807a9565066df206cb246ef" title="Devuelve el tipo.">DevuelveTipo</a>();
+<a name="l00036"></a>00036                 <span class="keywordtype">char</span> * <a class="code" href="class_rasgo.html#30e76ff8cd1878f6341f3d0b3ce97ef3" title="Devuelve el valor.">DevuelveValor</a>();
+<a name="l00040"></a>00040                 <span class="keyword">friend</span> istream &amp; <a class="code" href="class_rasgo.html#9b71675e73bfbb2fd72fd8fcfe3ea656" title="Sobrecarga del operador &amp;gt;&amp;gt;.">operator&gt;&gt;</a>(istream &amp;is, <a class="code" href="class_rasgo.html">Rasgo</a> &amp;R);
+<a name="l00044"></a>00044                 <span class="keyword">friend</span> ostream &amp; <a class="code" href="class_rasgo.html#af9fbba2f1a84943d6b21d1c46339b57" title="Sobrecarga del operador &amp;lt;&amp;lt;.">operator&lt;&lt;</a>(ostream &amp;os, <span class="keyword">const</span> <a class="code" href="class_rasgo.html">Rasgo</a> &amp;R);
+<a name="l00045"></a>00045 };
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047 <span class="preprocessor">#endif</span>
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Generado el Tue Sep 1 19:24:44 2009 para Quien es quien por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>
